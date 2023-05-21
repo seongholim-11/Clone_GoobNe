@@ -1,9 +1,39 @@
+@import url(./root.css);
 
-#header{width: 100%; height: 50px; padding: 30px 0; background: red;}
-#content{}
-#main-slick-wrap{width: 100%; height: 1000px; background: orange;}
-.oven-menu{width: 100%; height: 682px; padding: 100px 0; background: yellow;}
-.goobnews{width: 100%; height: 934px; padding-top: 230px; background: green;}
-.goobster{width: 100%; height: 624px; padding-top: 230px; background: blue;}
-.goobtube{width: 100%; height: 627px; padding-top: 230px; background: indigo;}
-#footer{width: 1700px; height: 202px; margin-top: 150px; padding: 0 8px 85px 8px; background: rgb(128, 0, 64);}
+/* layout */
+#header{width: 100%; padding: 3rem 0; background: var(--base-beige);}
+
+/* header */
+#header>.inner{padding-top: 2rem;}
+.header{height: 100%;}
+.menu ul{margin: 0 !important;}
+.menu ul li{margin-right: 7rem;}
+.menu ul li a{font-size: 2rem; font-weight: 600;}
+.more-btn img{width: 30px; height: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    /* header */
+    #header{padding: 2rem 0;}
+    .menu ul li{margin-right: 4rem;}
+    .menu ul li a{font-size: 1.5rem;}
+    .more-btn img{width: 25px; height: 20px;}
+}
+
+@media screen and (max-width: 768px) {
+    #header{padding: 1rem 0;}
+    .menu{display: none;}
+    .more-btn img{width: 30px; height: 25px;}
+}
