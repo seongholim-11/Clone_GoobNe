@@ -9,7 +9,15 @@
 .menu ul{margin: 0 !important;}
 .menu ul li{margin-right: 7rem;}
 .menu ul li a{font-size: 2rem; font-weight: 600;}
-.more-btn img{width: 30px; height: 30px;}
+.more-btn{width: 30px; height: 19px; position: relative;}
+.more-btn-wrap{width: 100%; height: 100%;}
+.bar{display: block; width: 100%; height: 0.4rem; background: var(--base-black); position: absolute; transition: 0.3s;}
+.bar1{top: 0;}
+.bar1.toggle{top: 50%; margin-top: -1px; transform: rotate(45deg);}
+.bar2{top: 50%;}
+.bar2.toggle{opacity: 0;}
+.bar3{top: 100%;}
+.bar3.toggle{top: 50%; margin-top: -1px; transform: rotate(-45deg);}
 
 
 
@@ -27,6 +35,7 @@
 @media screen and (max-width: 1024px) {
     /* header */
     #header{padding: 2rem 0;}
+    #header>.inner{padding-top: 1rem;}
     .menu ul li{margin-right: 4rem;}
     .menu ul li a{font-size: 1.5rem;}
     .more-btn img{width: 25px; height: 20px;}
@@ -34,6 +43,7 @@
 
 @media screen and (max-width: 768px) {
     #header{padding: 1rem 0;}
+    #header>.inner{padding: 0;}
     .menu{display: none;}
     .more-btn img{width: 30px; height: 25px;}
 }
