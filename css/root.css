@@ -3,6 +3,7 @@
 /* layout */
 html, body{margin: 0; padding: 0; font-size: 10px;}
 .inner{width: 90%; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.3);}
+dt, dd{margin: 0; padding: 0;}
 
 /* color */
 :root{

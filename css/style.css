@@ -23,20 +23,20 @@
 .aside{}
 .aside-bg{width: 100%; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.3); z-index: 1000;}
 .aside-lnb{position: fixed; top: 0; right: 0; z-index: 1001; max-width: 50rem; height: 100vh; background: var(--base-red); width: 90%;}
-.aside-inner{}
+.aside-inner{box-sizing: border-box; padding: 3rem; padding-left: 7rem; max-height: 100vh; overflow-y: scroll; overflow-x: hidden;}
 .aside-inner .aside-close{}
-.aside-inner .aside-login{}
-.aside-inner .aside-login a{}
-.aside-inner .aside-login .bar{}
-.lesserafim_banner{}
+.aside-inner .aside-login{display: flex; align-items: center; margin-bottom: 7.3rem;}
+.aside-inner .aside-login a{font-size: 2rem; font-weight: 500; color: var(--base-white);}
+.aside-inner .aside-login .login-bar{display: inline-block; width: 1px; height: 1.2rem; background: var(--base-white); margin: 0 2rem;}
+.lesserafim_banner{width: 100%; margin-left: -7rem; margin-bottom: 7rem;}
 .lesserafim_banner img{}
 .aside_scroll{}
-.aside_scroll>ul{}
-.aside_scroll>ul>li{}
-.aside_scroll>ul>li>a{}
-.aside_scroll .aside-num{}
-.aside_scroll .aside-num dt{}
-.aside_scroll .aside-num dd{}
+.aside_scroll>ul{margin-bottom: 7.2rem;}
+.aside_scroll>ul>li{margin-bottom: 3rem;}
+.aside_scroll>ul>li>a{display: inline-block; font-size: 2.7rem; font-weight: 800; color: var(--base-white);}
+.aside_scroll .aside-num{padding-bottom: 3rem;}
+.aside_scroll .aside-num dt{font-size: 2.2rem; font-weight: 700; color: var(--base-white); margin-bottom: 1.2rem;}
+.aside_scroll .aside-num dd{font-size: 2.2rem; font-weight: 500; color: var(--base-white);}
 
 
 
