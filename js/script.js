@@ -15,7 +15,7 @@ close.on({click:function(){
     $('.bar1').removeClass('toggle');
     $('.bar2').removeClass('toggle');
     $('.bar3').removeClass('toggle');
-    $('.aside').delay(1000).hide();
+    $('.aside-bg').delay(1000).hide(); 
 }})
 
 // aside ul

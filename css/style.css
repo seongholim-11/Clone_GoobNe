@@ -22,8 +22,8 @@
 /* aside */
 .aside{overflow: hidden;}
 .aside-bg{width: 100%; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.3); z-index: 1000;}
-.aside-lnb{position: fixed; top: 0; right: -50rem; z-index: 1001; max-width: 50rem; height: 100vh; background: var(--base-red); width: 90%; transition: all 0.5s;}
-.aside-lnb.active{right: 0; transition: all 0.5s;}
+.aside-lnb{position: fixed; top: 0; right: -50rem; z-index: 1001; max-width: 50rem; height: 100vh; background: var(--base-red); width: 90%; transition:  0.5s;}
+.aside-lnb.active{right: 0; }
 .aside-inner{padding: 3rem; padding-left: 7rem; max-height: 100vh; overflow-y: scroll; overflow-x: hidden;}
 .aside-inner .aside-close{display: flex; width: 3rem; height: 3rem; background: url(../img/more_menu/a-close.svg); margin-left: auto; margin-bottom: 3.2rem; background-size: cover; cursor: pointer;}
 .aside-inner .aside-login{display: flex; align-items: center; margin-bottom: 7.3rem;}
