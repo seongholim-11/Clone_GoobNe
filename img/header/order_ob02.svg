@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_354227" data-name="사각형 354227" width="30" height="30" transform="translate(4130 719)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_354226" data-name="사각형 354226" width="27.273" height="21.481" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_41" data-name="마스크 그룹 41" transform="translate(-4130 -719)" clip-path="url(#clip-path)">
+    <g id="그룹_474151" data-name="그룹 474151" transform="translate(4131.363 723.091)">
+      <g id="그룹_474150" data-name="그룹 474150" clip-path="url(#clip-path-2)">
+        <path id="패스_862758" data-name="패스 862758" d="M31.358,29.352H10.173a.752.752,0,0,0-.75.75V42.939a.752.752,0,0,0,.75.75h7.51V39.073a3.082,3.082,0,1,1,6.165,0v4.615h7.51a.752.752,0,0,0,.75-.75V30.1a.752.752,0,0,0-.75-.75" transform="translate(-7.129 -22.207)" fill="#d3000b"/>
+        <path id="패스_862759" data-name="패스 862759" d="M49.883,0H45.26l-.443,8.046h0a2.836,2.836,0,0,0,5.455,0Z" transform="translate(-33.908)" fill="#e27c7c"/>
+        <path id="패스_862760" data-name="패스 862760" d="M70.253,0H65.63l.389,8.046A2.845,2.845,0,0,0,68.738,10.1a2.874,2.874,0,0,0,2.736-2.059Z" transform="translate(-49.655)" fill="#fff"/>
+        <path id="패스_862761" data-name="패스 862761" d="M23.681,0,22.406,8.046a2.836,2.836,0,0,0,5.455,0h0L28.3,0Z" transform="translate(-16.952)" fill="#fff"/>
+        <path id="패스_862762" data-name="패스 862762" d="M6.566,1.033,6.729,0H3.152A1.432,1.432,0,0,0,1.841,1.012l-.154.59L1.313,3.03l0,.014L0,8.046A2.844,2.844,0,0,0,2.719,10.1,2.872,2.872,0,0,0,5.454,8.046l1-6.279.117-.733Z" fill="#e27c7c"/>
+        <path id="패스_862763" data-name="패스 862763" d="M90.224,3.839h0L89.5,1.014A1.421,1.421,0,0,0,88.2,0H84.622l.157,1.034h0l.425,2.8.638,4.207A2.843,2.843,0,0,0,88.561,10.1,2.873,2.873,0,0,0,91.3,8.046Z" transform="translate(-64.024)" fill="#e27c7c"/>
+      </g>
+    </g>
+  </g>
+</svg>
