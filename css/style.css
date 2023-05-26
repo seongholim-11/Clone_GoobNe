@@ -75,8 +75,22 @@
 .main-vi-wrap{}
 .banner-bg{width: 100%; position: relative; position: relative;}
 .banner-bg img{width: 100%; height: auto; display: block;}
-.banner-img{width: 100%; position: absolute; top: 0; left: 0; vertical-align: middle;}
-.banner-img img{display: inline-block;}
+.banner-img{width: 80%; position: absolute; top: 50%; left: 50%; vertical-align: middle; max-width: 1400px; margin: auto; transform: translate(-50%, -50%);}
+.banner-img a img{display: inline-block;}
+
+.banner-bg2{background-color: var(--base-beige);}
+.banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #3100d4; font-family: 'Rubik'; text-align: center;} 
+.banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px white;}
+.banner-bg2>.banner-text p.mid{}
+.banner-bg2>.banner-text p.last{}
+.banner-bg2>.banner-text p.last span{}
+.banner-bg2>.banner-img2{}
+.banner-bg2>.banner-img2 img{}
+.banner-bg2>.banner-img2 .goobne-btn{display: none;}
+.banner-bg2>.banner-img2 .goobne-btn div{}
+.banner-bg2>.banner-img2 .goobne-btn div img{}
+.banner-bg2>.banner-img2 .goobne-btn span{}
+.banner-bg2>.banner-img2 .goobne-btn span em{}
 
 /* .bg-height{max-height: 100%; background-size: cover;}
 .banner-bg1{background: url(../img/banner/cha/bage.jpeg) no-repeat center;}
@@ -86,6 +100,7 @@
 .banner-bg5{background: url(../img/banner/ocean/cha_back.jpeg) no-repeat center;}
 .banner-bg6{background: url(../img/banner/pizza/8ecc299423fa499f8404f2bcb6dfef8d.jpg) no-repeat center;}
  */
+
 
 
 
