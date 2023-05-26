@@ -26,3 +26,13 @@ aside_ul.on({click:function(){
     // $('.depth>ul').slideToggle();
     $('.depth>ul').not($(this).find('ul').slideToggle());
 }})
+
+// banner
+$('.main-vi-wrap').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    arrows : false
+  });

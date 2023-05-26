@@ -1,7 +1,7 @@
 @import url(./root.css);
 
 /* layout */
-#header{width: 100%; padding: 3rem 0; background: var(--base-beige);}
+#header{width: 100%; padding: 3rem 0; background: var(--base-beige);/*   position: fixed; top: 0; left: 0; z-index: 99999; */}
 
 /* header */
 #header>.inner{padding-top: 2rem;}
@@ -54,7 +54,7 @@
 .aside_scroll .aside-num dt{font-size: 2.2rem; font-weight: 700; color: var(--base-white); margin-bottom: 1.2rem;}
 .aside_scroll .aside-num dd{font-size: 2.2rem; font-weight: 500; color: var(--base-white);}
 
-/* 스크롤바 */
+/* aside 스크롤바 */
 .aside-inner::-webkit-scrollbar {
   width: 10px;
 }
@@ -70,8 +70,22 @@
   box-shadow: inset 0px 0px 5px white;
 }
 
+/* banner */
+.main-slick-wrap{}
+.main-vi-wrap{}
+.banner-bg{width: 100%; position: relative; position: relative;}
+.banner-bg img{width: 100%; height: auto; display: block;}
+.banner-img{width: 100%; position: absolute; top: 0; left: 0; vertical-align: middle;}
+.banner-img img{display: inline-block;}
 
-
+/* .bg-height{max-height: 100%; background-size: cover;}
+.banner-bg1{background: url(../img/banner/cha/bage.jpeg) no-repeat center;}
+.banner-bg2{background: url(../img/banner/chi/goobne_bg_2.png) no-repeat center;}
+.banner-bg3{background: url(../img/banner/dduk/ddeok.jpeg) no-repeat center;}
+.banner-bg4{background: url(../img/banner/lesser/lesserafim.jpeg) no-repeat center center;}
+.banner-bg5{background: url(../img/banner/ocean/cha_back.jpeg) no-repeat center;}
+.banner-bg6{background: url(../img/banner/pizza/8ecc299423fa499f8404f2bcb6dfef8d.jpg) no-repeat center;}
+ */
 
 
 
@@ -101,6 +115,9 @@
     .aside-inner .aside-login a{font-size: 1.5rem;}
     .aside_scroll>ul>li>a{font-size: 2rem;}
     .depth>ul>li>a{font-size: 1.3rem;}
+
+    /* banner */
+    .bg-height{height: 826px;}
 }
 
 @media screen and (max-width: 768px) {
