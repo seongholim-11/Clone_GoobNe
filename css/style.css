@@ -1,7 +1,7 @@
 @import url(./root.css);
 
 /* layout */
-#header{width: 100%; padding: 3rem 0; background: var(--base-beige);/*   position: fixed; top: 0; left: 0; z-index: 99999; */}
+#header{width: 100%; padding: 3rem 0; background: transparent;  position: fixed; top: 0; left: 0; z-index: 99999; }
 
 /* header */
 #header>.inner{padding-top: 2rem;}
@@ -72,34 +72,29 @@
 
 /* banner */
 .main-slick-wrap{}
-.main-vi-wrap{}
+.main-vi-wrap img{}
 .banner-bg{width: 100%; position: relative; position: relative;}
-.banner-bg img{width: 100%; height: auto; display: block;}
+.banner-bg img{width: 100%; height: auto; display: block; height: 100rem;}
 .banner-img{width: 80%; position: absolute; top: 50%; left: 50%; vertical-align: middle; max-width: 1400px; margin: auto; transform: translate(-50%, -50%);}
 .banner-img a img{display: inline-block;}
 
-.banner-bg2{background-color: var(--base-beige);}
-.banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #3100d4; font-family: 'Rubik'; text-align: center;} 
-.banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px white;}
-.banner-bg2>.banner-text p.mid{}
-.banner-bg2>.banner-text p.last{}
-.banner-bg2>.banner-text p.last span{}
-.banner-bg2>.banner-img2{}
-.banner-bg2>.banner-img2 img{}
-.banner-bg2>.banner-img2 .goobne-btn{display: none;}
-.banner-bg2>.banner-img2 .goobne-btn div{}
-.banner-bg2>.banner-img2 .goobne-btn div img{}
-.banner-bg2>.banner-img2 .goobne-btn span{}
-.banner-bg2>.banner-img2 .goobne-btn span em{}
-
-/* .bg-height{max-height: 100%; background-size: cover;}
-.banner-bg1{background: url(../img/banner/cha/bage.jpeg) no-repeat center;}
-.banner-bg2{background: url(../img/banner/chi/goobne_bg_2.png) no-repeat center;}
-.banner-bg3{background: url(../img/banner/dduk/ddeok.jpeg) no-repeat center;}
-.banner-bg4{background: url(../img/banner/lesser/lesserafim.jpeg) no-repeat center center;}
-.banner-bg5{background: url(../img/banner/ocean/cha_back.jpeg) no-repeat center;}
-.banner-bg6{background: url(../img/banner/pizza/8ecc299423fa499f8404f2bcb6dfef8d.jpg) no-repeat center;}
- */
+.banner-bg2{background-color: var(--base-beige); text-align: center; height: 100rem;}
+.banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
+.banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px white; line-height: 1.5; position: relative; display: inline-block;}
+.banner-bg2>.banner-text p::after{position: absolute; top: 0; left: 8px; color: #fff; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; letter-spacing: 0.8px; z-index: -1;}
+.banner-bg2>.banner-text p.first{content: "welcome"; margin-top: 5rem;}
+.banner-bg2>.banner-text p.first::after{content: "welcome";}
+.banner-bg2>.banner-text p.mid::after{width: 100%; content: "to the";}
+.banner-bg2>.banner-text p.last::after{width: 100%;  content: "Oven Universe";}
+.banner-bg2>.banner-text p.last{padding-bottom: 3rem;}
+.banner-bg2>.banner-img2{position: relative; display: inline-block; /* width: 130rem; height: 65rem; background: url(../img/banner/chi/goobne_bg_2.png) no-repeat; background-size: 100%; */}
+.banner-bg2>.banner-img2>img{width: 100%; height: auto; display: block; margin: 0 auto;}
+.banner-bg2>.banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 1rem; left: -7rem; display: block; text-align: center;}
+.banner-bg2>.banner-img2 .goobne-btn span{display: inline-block; font-size: 2.1rem; transform: rotate(-27deg); margin-bottom: 1rem; font-weight: bold;}
+.banner-bg2>.banner-img2 .goobne-btn span em{color: #D4000B; font-weight: 900; font-size: 3.8rem;}
+.banner-bg2>.banner-img2 .goobne-btn.btn2{width: 250px; height: 250px; background: url(../img/banner/chi/main_bg_icon_05.svg) no-repeat; background-size: 80%; position: absolute; top: 23rem; right: -7rem;}
+.banner-bg2>.banner-img2 .goobne-menu-btn.btn1{background: #AABBFF; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(-20deg); position: absolute; top: 35rem; left: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
+.banner-bg2>.banner-img2 .goobne-menu-btn.btn2{background: #FFAC9F; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(10deg); position: absolute; top: 4rem; right: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
 
 
 
