@@ -1,7 +1,7 @@
 @import url(./root.css);
 
 /* layout */
-#header{width: 100%; padding: 3rem 0; background: transparent;  position: fixed; top: 0; left: 0; z-index: 99999; }
+#header{width: 100%; padding: 3rem 0; background: transparent;  position: fixed; top: 0; left: 0; z-index: 999; }
 
 /* header */
 #header>.inner{padding-top: 2rem;}
@@ -31,8 +31,8 @@
 
 /* aside */
 .aside{overflow: hidden;}
-.aside-bg{width: 100%; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.3); z-index: 1000;}
-.aside-lnb{position: fixed; top: 0; right: -50rem; z-index: 1001; max-width: 50rem; height: 100vh; background: var(--base-red); width: 90%; transition:  0.5s;}
+.aside-bg{width: 100%; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.3); z-index: 9999;}
+.aside-lnb{position: fixed; top: 0; right: -50rem; z-index: 1001; max-width: 50rem; height: 100vh; background: var(--base-red); width: 90%; transition:  0.5s; z-index: 99999;}
 .aside-lnb.active{right: 0; }
 .aside-inner{padding: 3rem; padding-left: 7rem; max-height: 100vh; overflow-y: scroll; overflow-x: hidden;}
 .aside-inner .aside-close{display: flex; width: 3rem; height: 3rem; background: url(../img/more_menu/a-close.svg); margin-left: auto; margin-bottom: 3.2rem; background-size: cover; cursor: pointer;}
@@ -74,7 +74,8 @@
 .main-slick-wrap{}
 .main-vi-wrap img{}
 .banner-bg{width: 100%; position: relative; position: relative;}
-.banner-bg img{width: 100%; height: auto; display: block; height: 100rem;}
+.banner-bg img.banner-bg-img{height: 100rem;}
+.banner-bg img{width: 100%; height: auto; display: block; }
 .banner-img{width: 80%; position: absolute; top: 50%; left: 50%; vertical-align: middle; max-width: 1400px; margin: auto; transform: translate(-50%, -50%);}
 .banner-img a img{display: inline-block;}
 
@@ -87,15 +88,20 @@
 .banner-bg2>.banner-text p.mid::after{width: 100%; content: "to the";}
 .banner-bg2>.banner-text p.last::after{width: 100%;  content: "Oven Universe";}
 .banner-bg2>.banner-text p.last{padding-bottom: 3rem;}
-.banner-bg2>.banner-img2{position: relative; display: inline-block; /* width: 130rem; height: 65rem; background: url(../img/banner/chi/goobne_bg_2.png) no-repeat; background-size: 100%; */}
-.banner-bg2>.banner-img2>img{width: 100%; height: auto; display: block; margin: 0 auto;}
-.banner-bg2>.banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 1rem; left: -7rem; display: block; text-align: center;}
-.banner-bg2>.banner-img2 .goobne-btn span{display: inline-block; font-size: 2.1rem; transform: rotate(-27deg); margin-bottom: 1rem; font-weight: bold;}
-.banner-bg2>.banner-img2 .goobne-btn span em{color: #D4000B; font-weight: 900; font-size: 3.8rem;}
-.banner-bg2>.banner-img2 .goobne-btn.btn2{width: 250px; height: 250px; background: url(../img/banner/chi/main_bg_icon_05.svg) no-repeat; background-size: 80%; position: absolute; top: 23rem; right: -7rem;}
-.banner-bg2>.banner-img2 .goobne-menu-btn.btn1{background: #AABBFF; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(-20deg); position: absolute; top: 35rem; left: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
-.banner-bg2>.banner-img2 .goobne-menu-btn.btn2{background: #FFAC9F; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(10deg); position: absolute; top: 4rem; right: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
+.banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;/* width: 130rem; height: 65rem; background: url(../img/banner/chi/goobne_bg_2.png) no-repeat; background-size: 100%; */}
+.banner-bg2 .banner-img2>img{width: 100%; height: auto; display: block; }
+.banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center;}
+.banner-bg2 .banner-img2 .goobne-btn span{display: inline-block; font-size: 2.1rem; transform: rotate(-27deg); margin-bottom: 1rem; font-weight: bold;}
+.banner-bg2 .banner-img2 .goobne-btn span em{color: #D4000B; font-weight: 900; font-size: 3.8rem;}
+.banner-bg2 .banner-img2 .goobne-btn.btn2{width: 250px; height: 250px; background: url(../img/banner/chi/main_bg_icon_05.svg) no-repeat; background-size: 80%; position: absolute; top: 33rem; right: -7rem;}
+.banner-bg2 .banner-img2 .goobne-menu-btn.btn1{background: #AABBFF; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(-20deg); position: absolute; top: 45rem; left: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
+.banner-bg2 .banner-img2 .goobne-menu-btn.btn2{background: #FFAC9F; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(10deg); position: absolute; top: 14rem; right: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
 
+.slick-dots{bottom: 10rem;}
+.slick-dots li button{opacity: 0.5; background: #fff;  border-radius: 50%; width: 10px; height: 10px;}
+.slick-dots li.slick-active{margin-right: 2rem;}
+.slick-dots li.slick-active>button{opacity: 1; background: #fff;  border-radius: 50%; border: 5px solid #D4000B; width: 25px; height: 25px; }
+.slick-dots li button::before{display: none;}
 
 
 
