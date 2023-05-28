@@ -41,6 +41,36 @@ $('.main-vi-wrap').slick({
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
+});
+
+// oven-menu
+let observer = new IntersectionObserver((e) => {
+    e.forEach((a)=>{
+        if(a.isIntersecting){
+            a.target.style.transform = 'translateY(0rem)';
+        }else{
+            a.target.style.transform = 'translateY(30rem)';
+        }
+        	
+    	})
+})
+
+let food = document.getElementsByClassName('food')
+
+observer.observe(food[0]);
+observer.observe(food[1]);
+observer.observe(food[2]);
+observer.observe(food[3]);
+
+// oven-menu
+$('.oven-slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    variableWidth: true,
+    autoplay :true,
+    autoplaySpeed: 2000
 });

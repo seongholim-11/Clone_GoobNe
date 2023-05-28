@@ -76,14 +76,15 @@
 .main-slick-wrap:hover{cursor : url(../img/Frame01.png), auto;}
 .main-vi-wrap img:hover{cursor : url(../img/Frame01.png), auto;}
 .banner-bg{width: 100%; position: relative; position: relative;}
-.banner-bg img.banner-bg-img{height: 100rem;}
+.banner-bg img.banner-bg-img{height: 100vh;}
 .banner-bg img{width: 100%; height: auto; display: block; }
 .banner-img{width: 80%; position: absolute; top: 50%; left: 50%; vertical-align: middle; max-width: 1400px; margin: auto; transform: translate(-50%, -50%);}
 .banner-img a img{display: inline-block;}
 
-.banner-bg2{background-color: var(--base-beige); text-align: center; height: 100rem;}
+.banner-bg2{background-color: var(--base-beige); text-align: center; height: 100vh;}
 .banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
 .banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
+.banner-text p.first{margin-top: 20rem;}
 .banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;}
 .banner-bg2 .banner-img2>img{width: 100%; height: auto; display: block; }
 .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center; animation: updown 2s forwards ease-in-out infinite;}
@@ -112,22 +113,24 @@
 .text-wrap{flex-basis: 35%; background: var(--base-white); justify-content: end;}
 .text-wrap-1{flex-direction: column; transform: rotate(-90deg); text-align: center;}
 .text-wrap-1 span{font-size: 8rem; margin-bottom: 3.5rem; font-weight: bold;  font-family: 'Righteous', cursive;}
-.first{padding-top: 30rem; animation: oven1 2s forwards infinite; }
-.second{animation: oven2 2s forwards ease-out infinite;}
-.third{color: var(--base-red); animation: oven3 2s ease-out infinite;}
+.text-wrap-1 span.first{padding-top: 30rem; animation: oven1 2s forwards infinite; }
+.text-wrap-1 span.second{animation: oven2 2s forwards ease-out infinite;}
+.text-wrap-1 span.third{color: var(--base-red); animation: oven3 2s ease-out infinite;}
 .img-wrap{flex-basis: 65%; background: var(--base-beige);}
-.img-wrap-1{display: flex; justify-content: end; padding: 5rem 0;}
-.food{width: 300px; height: 300px; position: relative;}
+.img-wrap-1{display: flex; justify-content: center; padding: 20rem 0;}
+.food{width: 300px; height: 300px; position: relative; transform: translateY(0); transition: all 1s;}
 .food::after{position: absolute; width: 100%; height: 50px; background: rgba(0, 0, 0, 0.5); bottom: 0; left: 0; text-align: center; font-size: 3rem; color: var(--text-white);}
-.chicken{background: url(../img/oven_menu/1.jpg) no-repeat center center/cover; margin-bottom: 4rem;}
+.chicken{background: url(../img/oven_menu/1.jpg) no-repeat center center/cover; margin-bottom: 7rem;}
 .chicken::after{content: "chicken";}
 .dessert{background: url(../img/oven_menu/3.jpg) no-repeat center center/cover;}
 .dessert::after{content: "dessert";}
-.img-wrap-1-2{margin: 20rem 4rem 0;}
-.pizza{background: url(../img/oven_menu/2.jpg) no-repeat center center/cover; margin-bottom: 4rem;}
+.img-wrap-1-2{margin: 20rem 7rem 0;}
+.pizza{background: url(../img/oven_menu/2.jpg) no-repeat center center/cover; margin-bottom: 7rem;}
 .pizza::after{content: "pizza";}
-.best-set{background: url(../img/oven_menu/4.jpg) no-repeat center center/cover;}
-.best-set::after{content: "best set";}
+.best_set{background: url(../img/oven_menu/4.jpg) no-repeat center center/cover;}
+.best_set::after{content: "best set";}
+
+.oven-mobile{display: none;}
 
 @keyframes oven3 {
   0%{opacity: 0;}
@@ -163,11 +166,20 @@
 
 
 
-
+@media screen and (max-width: 1800px) {
+  .img-wrap-1{ padding: 10rem 0;}
+  .text-wrap-1 span{font-size: 5rem;}
+  .text-wrap-1 span.first{padding-top: 18rem;}
+  .food{width: 20rem; height: 20rem;}
+  .food::after{height: 4rem; font-size: 2rem;}
+  .chicken{margin-bottom: 4rem;}
+  .pizza{margin-bottom: 4rem;}
+  .img-wrap-1-2{margin: 15rem 4rem 0;}
+}
 
 @media screen and (max-width: 1350px) {
+  /* banner */
   .banner-bg2>.banner-text p{font-size: 6rem;}
-  .banner-bg2 .banner-img2{width: 100rem;}
   .banner-text p.first{margin-top: 5rem;}
   .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 15rem; height: 6rem; font-size: 3rem;  top: 30rem; left: 5rem;}
   .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 15rem; height: 6rem; font-size: 3rem; top: 7rem; right: 5rem;}
@@ -175,6 +187,7 @@
   .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 21rem; height: 18rem; background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
   .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
   .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+
 }
 
 
@@ -199,8 +212,6 @@
     .depth>ul>li>a{font-size: 1.3rem;}
 
     /* banner */
-    .banner-bg img.banner-bg-img{height: 80rem;}
-    .banner-bg2{height: 80rem;}
     .banner-bg2>.banner-text p{font-size: 5rem;}
     .banner-bg2 .banner-img2{width: 80rem;}
     .banner-text p.first{margin-top: 5rem;}
@@ -210,6 +221,16 @@
     .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 180px; height: 150px;background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
     .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
     .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+
+    /* oven menu */
+    .text-wrap-1 span{font-size: 4rem; margin-bottom: 2rem; }
+    .text-wrap-1 span.first{padding-top: 15rem;}
+    .food{width: 15rem; height: 15rem;}
+    .food::after{height: 3rem; font-size: 1.5rem;}
+    .chicken{margin-bottom: 2rem;}
+    .pizza{margin-bottom: 2rem;}
+    .img-wrap-1{ padding: 10rem 0 10rem 5rem;}
+    .img-wrap-1-2{margin: 8rem 2rem 0;}
 }
 
 @media screen and (max-width: 768px) {
@@ -219,8 +240,8 @@
     .more-btn img{width: 30px; height: 25px;}
 
     /* banner */
-    .banner-bg img.banner-bg-img{height: 60rem;}
-    .banner-bg2{height: 60rem;}
+    .banner-bg img.banner-bg-img{height: 50vh;}
+    .banner-bg2{height: 50vh;}
     .banner-bg2>.banner-text p{font-size: 4rem;}
     .banner-bg2 .banner-img2{width: 40rem;}
     .banner-text p.first{margin-top: 4rem;}
@@ -230,4 +251,25 @@
     .banner-bg2 .banner-img2 .goobne-menu-btn{width: 5rem; height: 2rem; font-size: 2rem;  }
     .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 16rem; left: -4rem;}
     .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 3rem; right: -4rem;}
+
+    /* oven-menu */
+    .text-wrap{display: none;}
+    .img-wrap{display: none;}
+    .oven-mobile{display: block; background: var(--base-beige);} 
+    .oven-mobile h2{font-size: 7rem; font-weight: bold; color: var(--base-red); text-align: center;}
+    .oven-slide-wrap{ padding-bottom: 3rem;}
+    .mfood{width: 20rem; margin: 0 2.5rem; position: relative; border-radius: 10px;}
+    .mfood::after{position: absolute; bottom: 0; left: 0; width: 100%; height: 4rem; background: rgba(0, 0, 0, 0.5); text-align: center; font-size: 2rem; font-weight: bold; color: var(--text-white);}
+    .mchicken::after{content: "Chicken";}
+    .mdessert::after{content: "Dessert";}
+    .mpizza::after{content: "Pizza";}
+    .mbest_set::after{content: "Best set"}
+    .mfood:nth-child(2n){margin-top: 5rem;}
+    .mfood img{width: 100%; border-radius: 10px;}
+    .oven-slide-wrap {
+      margin: 0 auto;
+      max-width: 100vw;
+      width: 100%;
+      overflow: hidden;
+  }
 }
