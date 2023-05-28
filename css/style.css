@@ -82,12 +82,12 @@
 .banner-bg2{background-color: var(--base-beige); text-align: center; height: 100rem;}
 .banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
 .banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
-.banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;/* width: 130rem; height: 65rem; background: url(../img/banner/chi/goobne_bg_2.png) no-repeat; background-size: 100%; */}
+.banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;}
 .banner-bg2 .banner-img2>img{width: 100%; height: auto; display: block; }
-.banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center;}
+.banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center; animation: updown 2s forwards ease-in-out infinite;}
 .banner-bg2 .banner-img2 .goobne-btn span{display: inline-block; font-size: 2.1rem; transform: rotate(-27deg); margin-bottom: 1rem; font-weight: bold;}
 .banner-bg2 .banner-img2 .goobne-btn span em{color: #D4000B; font-weight: 900; font-size: 3.8rem;}
-.banner-bg2 .banner-img2 .goobne-btn.btn2{width: 250px; height: 250px; background: url(../img/banner/chi/main_bg_icon_05.svg) no-repeat; background-size: 80%; position: absolute; top: 33rem; right: -7rem;}
+.banner-bg2 .banner-img2 .goobne-btn.btn2{width: 250px; height: 250px; background: url(../img/banner/chi/main_bg_icon_05.svg) no-repeat; background-size: 80%; position: absolute; top: 33rem; right: -7rem; animation: updown 2s forwards ease-in-out infinite;}
 .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{background: #AABBFF; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(-20deg); position: absolute; top: 45rem; left: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
 .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{background: #FFAC9F; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(10deg); position: absolute; top: 14rem; right: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
 
@@ -97,6 +97,11 @@
 .slick-dots li.slick-active>button{opacity: 1; background: #fff;  border-radius: 50%; border: 5px solid #D4000B; width: 25px; height: 25px; }
 .slick-dots li button::before{display: none;}
 
+@keyframes updown {
+  0%{transform: translateY(-15px);}
+  50%{transform: translateY(0px);}
+  100%{transform: translateY(-15px);}
+}
 
 
 
@@ -104,6 +109,18 @@
 
 
 
+@media screen and (max-width: 1350px) {
+  .banner-bg2{height: 90rem;}
+  .banner-bg2>.banner-text p{font-size: 6rem;}
+  .banner-bg2 .banner-img2{width: 100rem;}
+  .banner-text p.first{margin-top: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 15rem; height: 6rem; font-size: 3rem;  top: 30rem; left: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 15rem; height: 6rem; font-size: 3rem; top: 7rem; right: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 23rem; height: 20rem; background-size: 100%; position: absolute; top: 3rem; left: -1rem; display: block;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 21rem; height: 18rem; background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -127,7 +144,17 @@
     .depth>ul>li>a{font-size: 1.3rem;}
 
     /* banner */
-    .bg-height{height: 826px;}
+    .banner-bg img.banner-bg-img{height: 80rem;}
+    .banner-bg2{height: 80rem;}
+    .banner-bg2>.banner-text p{font-size: 5rem;}
+    .banner-bg2 .banner-img2{width: 80rem;}
+    .banner-text p.first{margin-top: 5rem;}
+    .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 13rem; height: 4rem; font-size: 2rem;  top: 30rem; left: 5rem;}
+    .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 13rem; height: 4rem; font-size: 2rem; top: 7rem; right: 5rem;}
+    .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 200px; height: 180px;background-size: 100%; position: absolute; top: 3rem; left: -1rem; display: block;}
+    .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 180px; height: 150px;background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
+    .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
+    .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
 }
 
 @media screen and (max-width: 768px) {
@@ -135,4 +162,18 @@
     #header>.inner{padding: 0;}
     .menu{display: none;}
     .more-btn img{width: 30px; height: 25px;}
+
+    /* banner */
+    .banner-bg img.banner-bg-img{height: 60rem;}
+    .banner-bg2{height: 60rem;}
+    .banner-bg2>.banner-text p{font-size: 4rem;}
+    .banner-bg2 .banner-img2{width: 40rem;}
+    .banner-text p.first{margin-top: 4rem;}
+    .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 180px; height: 150px; top: 0rem; left: -6rem;}
+    .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 150px; height: 130px; top: 10rem; right: -6rem;}
+    .banner-bg2 .banner-img2 .goobne-btn span{margin-right: 1rem;}
+    .banner-bg2 .banner-img2 .goobne-menu-btn{width: 5rem; height: 2rem; font-size: 2rem;  }
+    .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 16rem; left: -4rem;}
+    .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 3rem; right: -4rem;}
+
 }
