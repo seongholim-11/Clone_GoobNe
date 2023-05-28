@@ -2,6 +2,7 @@
 
 /* layout */
 #header{width: 100%; padding: 3rem 0; background: transparent;  position: fixed; top: 0; left: 0; z-index: 999; }
+#content{display: flex; flex-direction: column;}
 
 /* header */
 #header>.inner{padding-top: 2rem;}
@@ -70,6 +71,7 @@
   box-shadow: inset 0px 0px 5px white;
 }
 
+
 /* banner */
 .main-slick-wrap:hover{cursor : url(../img/Frame01.png), auto;}
 .main-vi-wrap img:hover{cursor : url(../img/Frame01.png), auto;}
@@ -96,6 +98,7 @@
 .slick-dots li.slick-active{margin-right: 2rem;}
 .slick-dots li.slick-active>button{opacity: 1; background: #fff;  border-radius: 50%; border: 5px solid #D4000B; width: 25px; height: 25px; }
 .slick-dots li button::before{display: none;}
+.slick-dotted.slick-slider{margin: 0;}
 
 @keyframes updown {
   0%{transform: translateY(-15px);}
@@ -104,13 +107,65 @@
 }
 
 
+/* oven-menu */
+.oven-menu{height: auto;}
+.text-wrap{flex-basis: 35%; background: var(--base-white); justify-content: end;}
+.text-wrap-1{flex-direction: column; transform: rotate(-90deg); text-align: center;}
+.text-wrap-1 span{font-size: 8rem; margin-bottom: 3.5rem; font-weight: bold;  font-family: 'Righteous', cursive;}
+.first{padding-top: 30rem; animation: oven1 2s forwards infinite; }
+.second{animation: oven2 2s forwards ease-out infinite;}
+.third{color: var(--base-red); animation: oven3 2s ease-out infinite;}
+.img-wrap{flex-basis: 65%; background: var(--base-beige);}
+.img-wrap-1{display: flex; justify-content: end; padding: 5rem 0;}
+.food{width: 300px; height: 300px; position: relative;}
+.food::after{position: absolute; width: 100%; height: 50px; background: rgba(0, 0, 0, 0.5); bottom: 0; left: 0; text-align: center; font-size: 3rem; color: var(--text-white);}
+.chicken{background: url(../img/oven_menu/1.jpg) no-repeat center center/cover; margin-bottom: 4rem;}
+.chicken::after{content: "chicken";}
+.dessert{background: url(../img/oven_menu/3.jpg) no-repeat center center/cover;}
+.dessert::after{content: "dessert";}
+.img-wrap-1-2{margin: 20rem 4rem 0;}
+.pizza{background: url(../img/oven_menu/2.jpg) no-repeat center center/cover; margin-bottom: 4rem;}
+.pizza::after{content: "pizza";}
+.best-set{background: url(../img/oven_menu/4.jpg) no-repeat center center/cover;}
+.best-set::after{content: "best set";}
+
+@keyframes oven3 {
+  0%{opacity: 0;}
+  20%{opacity: 0;}
+  40%{opacity: 1;}
+  60%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 1;}
+}
+@keyframes oven2 {
+  0%{opacity: 0;}
+  20%{opacity: 0;}
+  40%{opacity: 0;}
+  60%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 1;}
+}
+@keyframes oven1 {
+  0%{opacity: 0;}
+  20%{opacity: 0;}
+  40%{opacity: 0;}
+  60%{opacity: 0;}
+  80%{opacity: 1;}
+  100%{opacity: 1;}
+}
+
+
+
+
+
+
+
 
 
 
 
 
 @media screen and (max-width: 1350px) {
-  .banner-bg2{height: 90rem;}
   .banner-bg2>.banner-text p{font-size: 6rem;}
   .banner-bg2 .banner-img2{width: 100rem;}
   .banner-text p.first{margin-top: 5rem;}
@@ -175,5 +230,4 @@
     .banner-bg2 .banner-img2 .goobne-menu-btn{width: 5rem; height: 2rem; font-size: 2rem;  }
     .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 16rem; left: -4rem;}
     .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 3rem; right: -4rem;}
-
 }
