@@ -71,8 +71,8 @@
 }
 
 /* banner */
-.main-slick-wrap{}
-.main-vi-wrap img{}
+.main-slick-wrap:hover{cursor : url(../img/Frame01.png), auto;}
+.main-vi-wrap img:hover{cursor : url(../img/Frame01.png), auto;}
 .banner-bg{width: 100%; position: relative; position: relative;}
 .banner-bg img.banner-bg-img{height: 100rem;}
 .banner-bg img{width: 100%; height: auto; display: block; }
@@ -81,13 +81,7 @@
 
 .banner-bg2{background-color: var(--base-beige); text-align: center; height: 100rem;}
 .banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
-.banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px white; line-height: 1.5; position: relative; display: inline-block;}
-.banner-bg2>.banner-text p::after{position: absolute; top: 0; left: 8px; color: #fff; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; letter-spacing: 0.8px; z-index: -1;}
-.banner-bg2>.banner-text p.first{content: "welcome"; margin-top: 5rem;}
-.banner-bg2>.banner-text p.first::after{content: "welcome";}
-.banner-bg2>.banner-text p.mid::after{width: 100%; content: "to the";}
-.banner-bg2>.banner-text p.last::after{width: 100%;  content: "Oven Universe";}
-.banner-bg2>.banner-text p.last{padding-bottom: 3rem;}
+.banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
 .banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;/* width: 130rem; height: 65rem; background: url(../img/banner/chi/goobne_bg_2.png) no-repeat; background-size: 100%; */}
 .banner-bg2 .banner-img2>img{width: 100%; height: auto; display: block; }
 .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center;}
