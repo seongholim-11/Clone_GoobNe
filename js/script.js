@@ -88,3 +88,21 @@ $('.oven-slide').slick({
     autoplay :true,
     autoplaySpeed: 2000
 });
+
+// goobne new
+function moveSpan() {
+    const elements = document.querySelectorAll('.text-goobne');
+    let distance = 0;
+
+    setInterval(() => {
+        elements.forEach((element) => {
+            element.style.transform = `translateX(${distance}%)`;
+        });
+        distance -= 0.1;
+
+        if (distance < -100) {
+            distance = 0;
+        }
+    }); // Using approximately 60 frames per second (1000ms / 60 frames = 16.67ms)
+}
+moveSpan()
