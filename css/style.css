@@ -164,13 +164,12 @@
 
 
 /* goobnew */
-.goobnews{}
-.news-img-wrap{flex-basis: 65%; background: var(--base-beige);}
+.news-img-wrap{width: 65%; background: var(--base-beige); padding: 4rem 0;}
 .news-around-wrap{text-align: center;}
-.news-around-wrap h2{font-size: 8rem;}
+.news-around-wrap h2{font-size: 8rem; color: var(--base-red); margin-top: 5rem;}
 .news-around{position: relative; padding: 3rem; display: inline-block; overflow: hidden; height: 29rem;}
 .news-img{display: inline-block; }
-.news-img img{}
+.news-img img{width: 336px; height: 300px;}
 .news-around-text-wrap{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .news-around-text{height: 3rem; position: absolute; background: var(--base-red);}
 .news-around-text:nth-child(1){top: 0; left: 0;}
@@ -179,10 +178,13 @@
 .news-around-text:nth-child(4){right: 0; bottom: 0; transform: rotate(180deg);}
 .text-goobne{color: var(--text-white); font-size: 2rem; transform: translateX(0%);}
 
-.news-text-wrap{flex-basis: 35%; background: var(--base-white); flex-direction: column;}
+.news-text-wrap{width: 35%; background: var(--base-white); flex-direction: column;}
 .news-title{font-size: 5rem; justify-content: center;}
-.news-text{flex-basis: 20%; width: 40rem;}
-.news-text p{font-size: 2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.news-text{flex-basis: 20%; width: 100%; border: 1px solid #ddd; box-sizing: border-box;}
+.news-content.active{background: var(--base-red); width: 130%; transform: translateX(-11.5%);}
+.news-text.active p{color: var(--text-white); width: 60rem;}
+.news-title h3{font-size: 5rem; margin-bottom: 2rem;}
+.news-text p{margin: 0 auto; display: block; width: 45rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 3rem; }
 
 
 
@@ -273,6 +275,14 @@
     .pizza{margin-bottom: 2rem;}
     .img-wrap-1{ padding: 10rem 0 10rem 5rem;}
     .img-wrap-1-2{margin: 8rem 2rem 0;}
+
+    /* goobnew */
+    .news-img-wrap{padding: 0 0 4rem;}
+    .news-around{height: 28rem;}
+    .news-img img{width: 280px; height: 280px;}
+    .news-text.active p{width: 40rem;}
+    .news-title h3{font-size: 4rem; margin: 2rem 0;}
+    .news-text p{width: 30rem; font-size: 2.5rem; }
 }
 
 @media screen and (max-width: 768px) {

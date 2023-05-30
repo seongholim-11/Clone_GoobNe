@@ -106,3 +106,15 @@ function moveSpan() {
     }); // Using approximately 60 frames per second (1000ms / 60 frames = 16.67ms)
 }
 moveSpan()
+
+// goobnews
+let news_text = $('.news-content');
+news_text.on({
+    click: function () {
+        news_text.removeClass('active')
+        $(this).toggleClass('active');
+        let a = $(this).index();
+        console.log("🚀 ~ file: script.js:117 ~ a:", a)
+        $(".news-img img").attr("src", "./img/goobnews/p_"+a+".png");
+    }
+})
