@@ -100,10 +100,10 @@ function moveSpan() {
         });
         distance -= 0.1;
 
-        if (distance < -100) {
+        if (distance <= -100) {
             distance = 0;
         }
-    }); // Using approximately 60 frames per second (1000ms / 60 frames = 16.67ms)
+    },6); 
 }
 moveSpan()
 
