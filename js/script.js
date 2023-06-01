@@ -120,3 +120,30 @@ news_text.on({
 })
 
 // goobsters
+
+const slideBanner = $('.goobster-img ul');
+const slideList = $('.goobster-img ul li');
+
+let slideWidth = slideList.width();
+let setIntervalId;
+
+bannerSlide()
+
+// bannerSlide() 함수 만들기
+function bannerSlide(){
+    setIntervalId = setInterval(()=>{
+        slideBanner.animate({left: -(slideWidth+20)}, 500,
+        function(){
+            $('.goobster-img ul li:first').insertAfter('.goobster-img ul li:last');
+            slideBanner.css({left:0})
+        })
+    }, 1100)
+}
+
+$(slideBanner).on('mouseover focus', function(){
+    clearInterval(setIntervalId)
+})
+
+$(slideBanner).on('mouseout leave', function(){
+    bannerSlide()
+})
