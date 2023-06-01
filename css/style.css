@@ -199,7 +199,7 @@
 
 .goobster-img{position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: #fff; padding: 2rem 0;}
 .goobster-img ul{}
-.goobster-img ul li{width: 20rem; height: 20rem; margin-right: 2rem;}
+.goobster-img ul li{width: 14.5%; height: 20rem; margin-right: 2rem;}
 .goobster-img ul li a{display: block;}
 .goobster-img ul li a img{width: 100%;}
 
