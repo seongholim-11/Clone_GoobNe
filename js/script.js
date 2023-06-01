@@ -118,3 +118,5 @@ news_text.on({
         $(".news-img img").attr("src", "./img/goobnews/p_"+a+".png");
     }
 })
+
+// goobsters
