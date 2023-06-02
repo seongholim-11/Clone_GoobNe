@@ -80,7 +80,6 @@ observer.observe(food[3]);
 
 // oven-menu
 $('.oven-slide').slick({
-    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
