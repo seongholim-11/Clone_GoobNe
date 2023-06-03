@@ -198,9 +198,9 @@
 .goobster-bg7 h2 img{filter: invert(15%) sepia(92%) saturate(4626%) hue-rotate(349deg) brightness(79%) contrast(116%);}
 .goobster-beige{background: var(--base-beige); line-height: 100%;}
 
-.goobster-img{position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: #D4000B; overflow: hidden;}
+.goobster-img{position: absolute; top: 60%; left: 0; transform: translateY(-50%); background: #D4000B; overflow: hidden;}
 .goobster-img ul{padding: 2rem 0; position: relative; width: 120%;}
-.goobster-img ul li{width: 20%;margin-right: 2rem;}
+.goobster-img ul li{width: 20%; margin-right: 2rem;}
 .goobster-img ul li a{display: block;}
 .goobster-img ul li a img{width: 100%; height: 100%;}
 
