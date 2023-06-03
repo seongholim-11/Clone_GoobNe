@@ -89,7 +89,7 @@
 .banner-bg2{background-color: var(--base-beige); text-align: center; height: 100vh;}
 .banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
 .banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
-.banner-text p.first{margin-top: 20rem;}
+.banner-text p.first{margin-top: 15rem;}
 .banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;}
 .banner-bg2 .banner-img2>img{width: 100%; height: auto; display: block; }
 .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center; animation: updown 2s forwards ease-in-out infinite;}
@@ -352,7 +352,7 @@
     .img-wrap{display: none;}
     .oven-mobile{display: block; background: var(--base-beige);} 
     .oven-mobile h2{font-size: 5rem; font-weight: bold; color: var(--base-red); text-align: center; margin: 4rem 0;}
-    .oven-slide-wrap{ padding: 3rem 0 5rem; margin: 0 auto; max-width: 100vw; width: 100%; overflow: hidden;}
+    .oven-slide-wrap{ padding: 3rem 0 5rem; margin: 0 auto; max-width: 96.7vw; width: 100%; overflow: hidden;}
     .mfood{width: 20rem; margin: 0 2.5rem; position: relative; border-radius: 10px;}
     .mfood::after{position: absolute; bottom: 0; left: 0; width: 100%; height: 4rem; background: rgba(0, 0, 0, 0.5); text-align: center; font-size: 2rem; font-weight: bold; color: var(--text-white);}
     .mchicken::after{content: "Chicken";}
