@@ -205,11 +205,31 @@
 .goobster-img ul li a img{width: 100%; height: 100%;}
 
 
+/* goobtube */
+.goobtube{background: var(--base-beige);}
+.goobtube h2{font-size: 8rem; text-align: center; color: var(--base-red);}
+.nfmc{overflow: hidden; background: transparent; justify-content: center; height: 9rem; border-top: 1px solid #050000; border-bottom: 1px solid #050000; box-sizing: border-box; margin: 9rem 0;}
+.nfmc ul{width: calc(430px * 15);}
+.nfmc ul li{justify-content: center; font-size: 3.2rem; font-family: 'Rubik'; font-weight: 600; width: 43rem; animation: textSlide 25s forwards linear infinite;}
 
+@keyframes textSlide {
+  100%{transform: translateX(-500%);}
+}
 
+.out-in-img.inner{position: relative; background: none;}
+.oii{display: none; position: relative; width: 100%; height: 50rem;}
+.oii.active{display: block;}
+.oii-img, .oii-text{position: absolute; top: 50%; transform: translateY(-50%); transition: all 1.5s;}
+.oii-img{left: 5%; opacity: 1;}
+.oii-img img{width: 53rem; height: 35rem;}
+.oii-text{right: 5%; opacity: 1;}
+.oii-text h3{font-size: 4rem;}
+.oii-text p{font-size: 2.5rem; margin-top: 2rem;}
+.oii-text a{display: block; padding: 1rem 2rem 1.3rem; font-size: 2rem; border: 1px solid #050000; width: 12rem; border-radius: 10px; background: #fff; font-weight: 500; margin-top: 2rem; text-align: center;}
 
-
-
+.prev_arrow, .next_arrow{position: absolute; width: 40px; height: 65px; top: 50%; transform: translateY(-50%); cursor: pointer;}
+.prev_arrow{left: 0; background: url(../img/goobtube/Vector\ 2.png) no-repeat;}
+.next_arrow{right: 0; background: url(../img/goobtube/Vector.png) no-repeat;}
 
 
 
@@ -244,6 +264,20 @@
   .goobster-wrap{height: 25rem;}
 }
 
+@media screen and (max-width: 1600px) {
+  /* goobtube */
+  .goobtube h2{font-size: 6rem;}
+  .nfmc{ margin: 4rem 0; height: 8rem;}
+  .nfmc ul li{font-size: 3rem; width: 40rem;}
+
+  .oii{height: 40rem;}
+  .oii-img img{width: 48rem; height: 30rem;}
+  .oii-text h3{font-size: 2.8rem;}
+  .oii-text p{font-size: 2.3rem; margin-top: 1.8rem;}
+  .oii-text a{padding: 0.7rem 1.5rem 1rem; font-size: 1.8rem; width: 11rem; margin-top: 1.8rem;}
+}
+
+
 @media screen and (max-width: 1350px) {
   /* banner */
   .banner-bg2>.banner-text p{font-size: 6rem;}
@@ -255,129 +289,160 @@
   .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
   .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
 
-    /* goobnews */
-    .news-around{height: 28rem;}
-    .goobnews-pc{padding: 5rem 0;}
-    .news-around-wrap h2{margin: 1rem 0; font-size: 5rem;}
-    .news-img{ width: 30rem; height: 28rem;}
-    .news-img img{height: 28.5rem;}
-    .news-title h3{font-size: 4rem; margin: 2rem 0;}
-    .news-text.active p{width: 40rem;}
-    .news-text p{width: 30rem; font-size: 2.5rem;}
+  /* goobnews */
+  .news-around{height: 28rem;}
+  .goobnews-pc{padding: 5rem 0;}
+  .news-around-wrap h2{margin: 1rem 0; font-size: 5rem;}
+  .news-img{ width: 30rem; height: 28rem;}
+  .news-img img{height: 28.5rem;}
+  .news-title h3{font-size: 4rem; margin: 2rem 0;}
+  .news-text.active p{width: 40rem;}
+  .news-text p{width: 30rem; font-size: 2.5rem;}
 
       /* goobster */
   .goobster-wrap{height: 20rem;}
+  .goobster-bg7 h2{font-size: 5rem; padding-left: 8.5rem;}
+  .goobster-bg7 h2 img{width: 4.5rem;}
+
+  /* goobtube */
+  .goobtube h2{font-size: 5rem;}
+  .nfmc{ margin: 4rem 0; height: 7rem;}
+  .nfmc ul li{font-size: 2.5rem; width: 35rem;}
+
+  .out-in-img.inner{width: 1024px;}
+  .oii{height: 35rem;}
+  .oii-img img{width: 43rem; height: 25rem;}
+  .oii-text h3{font-size: 2.3rem;}
+  .oii-text p{font-size: 1.8rem; margin-top: 1.5rem;}
+  .oii-text a{padding: 0.7rem 1.5rem 1rem; font-size: 1.5rem; width: 10rem; margin-top: 1.5rem;}
 }
 
 
 @media screen and (max-width: 1024px) {
-    /* header */
-    #header{padding: 2rem 0;}
-    #header>.inner{padding-top: 1rem;}
+  /* header */
+  #header{padding: 2rem 0;}
+  #header>.inner{padding-top: 1rem;}
+  .order-ob-wrap{top: -20%; left: -200%;}
+  .menu ul li{margin-right: 4rem;}
+  .menu ul li a{font-size: 1.5rem;}
+  .more-btn img{width: 25px; height: 20px;}
+  /* aside */
+  .aside-lnb{max-width: 35rem;}
+  .aside-inner{padding: 3rem; padding-left: 4rem;}
+  .lesserafim_banner{display: block; margin-left: -4rem; margin-bottom: 7rem;}
+  .lesserafim_banner img{width: 126%;}
+  .aside-inner .aside-login a{font-size: 1.5rem;}
+  .aside_scroll>ul>li>a{font-size: 2rem;}
+  .depth>ul>li>a{font-size: 1.3rem;}
+  /* banner */
+  .banner-bg2>.banner-text p{font-size: 5rem;}
+  .banner-bg2 .banner-img2{width: 80rem;}
+  .banner-text p.first{margin-top: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 13rem; height: 4rem; font-size: 2rem;  top: 30rem; left: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 13rem; height: 4rem; font-size: 2rem; top: 7rem; right: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 200px; height: 180px;background-size: 100%; position: absolute; top: 3rem; left: -1rem; display: block;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 180px; height: 150px;background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+  /* oven menu */
+  .text-wrap-1 span{font-size: 4rem; margin-bottom: 2rem; }
+  .text-wrap-1 span.first{padding-top: 15rem;}
+  .food{width: 15rem; height: 15rem;}
+  .food::after{height: 3rem; font-size: 1.5rem;}
+  .chicken{margin-bottom: 2rem;}
+  .pizza{margin-bottom: 2rem;}
+  .img-wrap-1{ padding: 10rem 0 10rem 5rem;}
+  .img-wrap-1-2{margin: 8rem 2rem 0;}
+  /* goobnew */
+  .goobnews-pc{padding: 2rem 0;}
+  .news-around{height: 23rem;}
+  .news-around-wrap h2{margin: 0.5rem 0; font-size: 5rem;}
+  .news-img{ width: 25rem; height: 23rem;}
+  .news-img img{height: 23rem;}
+  .news-img img{height: 100%;}
+  .news-text.active p{width: 35rem;}
+  .news-title h3{font-size: 3rem; margin: 0.5rem 0;}
+  .news-text p{width: 25rem; font-size: 2.5rem; }
 
-    .order-ob-wrap{top: -20%; left: -200%;}
-
-    .menu ul li{margin-right: 4rem;}
-    .menu ul li a{font-size: 1.5rem;}
-    .more-btn img{width: 25px; height: 20px;}
-
-    /* aside */
-    .aside-lnb{max-width: 35rem;}
-    .aside-inner{padding: 3rem; padding-left: 4rem;}
-    .lesserafim_banner{display: block; margin-left: -4rem; margin-bottom: 7rem;}
-    .lesserafim_banner img{width: 126%;}
-    .aside-inner .aside-login a{font-size: 1.5rem;}
-    .aside_scroll>ul>li>a{font-size: 2rem;}
-    .depth>ul>li>a{font-size: 1.3rem;}
-
-    /* banner */
-    .banner-bg2>.banner-text p{font-size: 5rem;}
-    .banner-bg2 .banner-img2{width: 80rem;}
-    .banner-text p.first{margin-top: 5rem;}
-    .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 13rem; height: 4rem; font-size: 2rem;  top: 30rem; left: 5rem;}
-    .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 13rem; height: 4rem; font-size: 2rem; top: 7rem; right: 5rem;}
-    .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 200px; height: 180px;background-size: 100%; position: absolute; top: 3rem; left: -1rem; display: block;}
-    .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 180px; height: 150px;background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
-    .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
-    .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
-
-    /* oven menu */
-    .text-wrap-1 span{font-size: 4rem; margin-bottom: 2rem; }
-    .text-wrap-1 span.first{padding-top: 15rem;}
-    .food{width: 15rem; height: 15rem;}
-    .food::after{height: 3rem; font-size: 1.5rem;}
-    .chicken{margin-bottom: 2rem;}
-    .pizza{margin-bottom: 2rem;}
-    .img-wrap-1{ padding: 10rem 0 10rem 5rem;}
-    .img-wrap-1-2{margin: 8rem 2rem 0;}
-
-    /* goobnew */
-    .goobnews-pc{padding: 2rem 0;}
-    .news-around{height: 23rem;}
-    .news-around-wrap h2{margin: 0.5rem 0; font-size: 5rem;}
-    .news-img{ width: 25rem; height: 23rem;}
-    .news-img img{height: 23rem;}
-    .news-img img{height: 100%;}
-    .news-text.active p{width: 35rem;}
-    .news-title h3{font-size: 3rem; margin: 0.5rem 0;}
-    .news-text p{width: 25rem; font-size: 2.5rem; }
-
-          /* goobster */
+  /* goobster */
   .goobster-wrap{height: 15rem;}
   .goobster-bg7 h2{font-size: 5rem;}
   .goobster-bg7 h2 img{width: 3.5rem;}
+
+  /* goobtube */
+  .goobtube h2{font-size: 4rem;}
+  .nfmc{margin: 3rem 0; height: 5rem;}
+  .nfmc ul li{font-size: 2rem; width: 28rem;}
+
+  .out-in-img.inner{width: 768px;}
+  .oii{height: 30rem;}
+  .oii-img img{width: 28rem; height: 18rem;}
+  .oii-text h3{font-size: 2rem;}
+  .oii-text p{font-size: 1.5rem; margin-top: 1rem;}
+  .oii-text a{padding: 0.4rem 1.3rem 0.7rem; font-size: 1.3rem; width: 8rem; margin-top: 1rem;}
 }
 
 @media screen and (max-width: 768px) {
-    #header{padding: 1rem 0;}
-    #header>.inner{padding: 0;}
-    .menu{display: none;}
-    .more-btn img{width: 30px; height: 25px;}
+  #header{padding: 1rem 0;}
+  #header>.inner{padding: 0;}
+  .menu{display: none;}
+  .more-btn img{width: 30px; height: 25px;}
 
-    /* banner */
-    .banner-bg img.banner-bg-img{height: 80vh;}
-    .banner-bg2{height: 80vh;}
-    .banner-bg2>.banner-text p{font-size: 4rem;}
-    .banner-bg2 .banner-img2{width: 40rem;}
-    .banner-text p.first{margin-top: 4rem;}
-    .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 180px; height: 150px; top: 0rem; left: -6rem;}
-    .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 150px; height: 130px; top: 10rem; right: -6rem;}
-    .banner-bg2 .banner-img2 .goobne-btn span{margin-right: 1rem;}
-    .banner-bg2 .banner-img2 .goobne-menu-btn{width: 5rem; height: 2rem; font-size: 2rem;  }
-    .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 16rem; left: -4rem;}
-    .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 3rem; right: -4rem;}
+  /* banner */
+  .banner-bg img.banner-bg-img{height: 80vh;}
+  .banner-bg2{height: 80vh;}
+  .banner-bg2>.banner-text p{font-size: 4rem;}
+  .banner-bg2 .banner-img2{width: 40rem;}
+  .banner-text p.first{margin-top: 4rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 180px; height: 150px; top: 0rem; left: -6rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 150px; height: 130px; top: 10rem; right: -6rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{margin-right: 1rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn{width: 5rem; height: 2rem; font-size: 2rem;  }
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 16rem; left: -4rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 3rem; right: -4rem;}
 
-    /* oven-menu */
-    .text-wrap{display: none;}
-    .img-wrap{display: none;}
-    .oven-mobile{display: block; background: var(--base-beige);} 
-    .oven-mobile h2{font-size: 5rem; font-weight: bold; color: var(--base-red); text-align: center; margin: 4rem 0;}
-    .oven-slide-wrap{ padding: 3rem 0 5rem; margin: 0 auto; max-width: 96.7vw; width: 100%; overflow: hidden;}
-    .mfood{width: 20rem; margin: 0 2.5rem; position: relative; border-radius: 10px;}
-    .mfood::after{position: absolute; bottom: 0; left: 0; width: 100%; height: 4rem; background: rgba(0, 0, 0, 0.5); text-align: center; font-size: 2rem; font-weight: bold; color: var(--text-white);}
-    .mchicken::after{content: "Chicken";}
-    .mdessert::after{content: "Dessert";}
-    .mpizza::after{content: "Pizza";}
-    .mbest_set::after{content: "Best set"}
-    .mfood:nth-child(2n){margin-top: 5rem;}
-    .mfood img{width: 100%; border-radius: 10px;}
+  /* oven-menu */
+  .text-wrap{display: none;}
+  .img-wrap{display: none;}
+  .oven-mobile{display: block; background: var(--base-beige);} 
+  .oven-mobile h2{font-size: 5rem; font-weight: bold; color: var(--base-red); text-align: center; margin: 4rem 0;}
+  .oven-slide-wrap{ padding: 3rem 0 5rem; margin: 0 auto; max-width: 96.7vw; width: 100%; overflow: hidden;}
+  .mfood{width: 20rem; margin: 0 2.5rem; position: relative; border-radius: 10px;}
+  .mfood::after{position: absolute; bottom: 0; left: 0; width: 100%; height: 4rem; background: rgba(0, 0, 0, 0.5); text-align: center; font-size: 2rem; font-weight: bold; color: var(--text-white);}
+  .mchicken::after{content: "Chicken";}
+  .mdessert::after{content: "Dessert";}
+  .mpizza::after{content: "Pizza";}
+  .mbest_set::after{content: "Best set"}
+  .mfood:nth-child(2n){margin-top: 5rem;}
+  .mfood img{width: 100%; border-radius: 10px;}
 
-      /* goobnews */
-      .goobnews-pc{display: none;}
-      .goobnews-m{display: block; text-align: center; background: var(--base-beige);}
-      .goobnews-m .inner{background: none;}
-      .goobnews-m h3{font-size: 4.5rem; color: var(--base-red); margin-bottom: 3rem;}
-      .goobnews-m ul{display: flex; flex-direction: column;}
-      .goobnews-m ul>li{display: flex; flex-basis: 30%; margin-bottom: 1rem; padding-bottom: 1rem; text-align: left; align-items: center; border-bottom: 1px solid #000;}
-      .goobnews-m ul>li .mgoobnews-img{width: 10rem; padding-right: 2rem;}
-      .goobnews-m ul>li .mgoobnews-img img{width: 10rem;}
-      .goobnews-m ul>li .mgoobnews-text{flex-basis: 70%;}
-      .goobnews-m ul>li .mgoobnews-text h4{font-size: 2.5rem;}
-      .goobnews-m ul>li .mgoobnews-text p{font-size: 2rem;}
+  /* goobnews */
+  .goobnews-pc{display: none;}
+  .goobnews-m{display: block; text-align: center; background: var(--base-beige);}
+  .goobnews-m .inner{background: none; width: 100%;}
+  .goobnews-m h3{font-size: 4.5rem; color: var(--base-red); margin-bottom: 3rem;}
+  .goobnews-m ul{display: flex; flex-direction: column;}
+  .goobnews-m ul>li{display: flex; flex-basis: 30%; margin-bottom: 1rem; padding-bottom: 1rem; text-align: left; align-items: center; border-bottom: 1px solid #000;}
+  .goobnews-m ul>li .mgoobnews-img{width: 10rem; padding-right: 2rem;}
+  .goobnews-m ul>li .mgoobnews-img img{width: 10rem;}
+  .goobnews-m ul>li .mgoobnews-text{flex-basis: 70%;}
+  .goobnews-m ul>li .mgoobnews-text h4{font-size: 2.5rem;}
+  .goobnews-m ul>li .mgoobnews-text p{font-size: 2rem;}
 
-                /* goobster */
+  /* goobster */
   .goobster-wrap{height: 13rem;}
   .goobster-bg7 h2{font-size: 4rem;}
   .goobster-bg7 h2 img{width: 3rem;}
 
+  /* goobtube */
+  .goobtube h2{font-size: 4rem;}
+  .nfmc{margin: 3rem 0; height: 5rem;}
+  .nfmc ul li{font-size: 2rem; width: 28rem;}
+
+  .out-in-img.inner{width: 690px;}
+  .oii{height: 25rem;}
+  .oii-img img{width: 23rem; height: 15rem;}
+  .oii-text h3{font-size: 1.8rem;}
+  .oii-text p{font-size: 1.3rem; margin-top: 0.8rem;}
+  .oii-text a{padding: 0.4rem 1rem 0.7rem; font-size: 1rem; width: 6rem; margin-top: 0.8rem;}
 }

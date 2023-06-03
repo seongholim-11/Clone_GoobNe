@@ -2,12 +2,12 @@
 let header = document.querySelector('#header');
 let headerHeight = header.offsetHeight;
 
-window.onscroll = function(){
+window.onscroll = function () {
     let windowTop = window.scrollY;
 
-    if(windowTop >= headerHeight){
+    if (windowTop >= headerHeight) {
         header.classList.add("drop");
-    }else{
+    } else {
         header.classList.remove("drop")
     }
 }
@@ -61,14 +61,14 @@ $('.main-vi-wrap').slick({
 
 // oven-menu
 let observer = new IntersectionObserver((e) => {
-    e.forEach((a)=>{
-        if(a.isIntersecting){
+    e.forEach((a) => {
+        if (a.isIntersecting) {
             a.target.style.transform = 'translateY(0rem)';
-        }else{
+        } else {
             a.target.style.transform = 'translateY(30rem)';
         }
-        	
-    	})
+
+    })
 })
 
 let food = document.getElementsByClassName('food')
@@ -84,7 +84,7 @@ $('.oven-slide').slick({
     speed: 500,
     slidesToShow: 1,
     variableWidth: true,
-    autoplay :true,
+    autoplay: true,
     autoplaySpeed: 2000
 });
 
@@ -102,7 +102,7 @@ function moveSpan() {
         if (distance <= -100) {
             distance = 0;
         }
-    },6); 
+    }, 6);
 }
 moveSpan()
 
@@ -114,7 +114,7 @@ news_text.on({
         $(this).toggleClass('active');
         let a = $(this).index();
         console.log("🚀 ~ file: script.js:117 ~ a:", a)
-        $(".news-img img").attr("src", "./img/goobnews/p_"+a+".png");
+        $(".news-img img").attr("src", "./img/goobnews/p_" + a + ".png");
     }
 })
 
@@ -123,26 +123,116 @@ news_text.on({
 const slideBanner = $('.goobster-img ul');
 const slideList = $('.goobster-img ul li');
 
-let slideWidth = slideList.width();
 let setIntervalId;
 
 bannerSlide()
 
 // bannerSlide() 함수 만들기
-function bannerSlide(){
-    setIntervalId = setInterval(()=>{
-        slideBanner.animate({left: -(slideWidth+20)}, 500,
-        function(){
-            $('.goobster-img ul li:first').insertAfter('.goobster-img ul li:last');
-            slideBanner.css({left:0})
-        })
-    }, 1100)
+function bannerSlide() {
+    setIntervalId = setInterval(() => {
+        let slideWidth = slideList.width();
+        slideBanner.animate({ left: -(slideWidth + 20) },
+            function () {
+                $('.goobster-img ul li:first').insertAfter('.goobster-img ul li:last');
+                slideBanner.css({ left: 0 })
+            })
+    }, 2000)
 }
 
-$(slideBanner).on('mouseover focus', function(){
+$(slideBanner).on('mouseover focus', function () {
     clearInterval(setIntervalId)
 })
 
-$(slideBanner).on('mouseout leave', function(){
+$(slideBanner).on('mouseout leave', function () {
     bannerSlide()
 })
+
+// Goobtube
+let observer_goobtube_img = new IntersectionObserver((item) => {
+    item.forEach((img) => {
+        if (img.isIntersecting) {
+            img.target.style.left = '9%';
+            img.target.style.transform = 'translateY(-50%)';
+            img.target.style.opacity = '1';;
+        } else {
+            img.target.style.left = '-5%';
+            img.target.style.transform = 'translateY(-50%)';
+            img.target.style.opacity = '0';
+        }
+
+    })
+})
+
+let youtube = document.getElementsByClassName('oii-img')
+
+observer_goobtube_img.observe(youtube[0]);
+observer_goobtube_img.observe(youtube[1]);
+observer_goobtube_img.observe(youtube[2]);
+observer_goobtube_img.observe(youtube[3]);
+
+let observer_goobtube_text = new IntersectionObserver((item) => {
+    item.forEach((text) => {
+        if (text.isIntersecting) {
+            text.target.style.right = '9%';
+            text.target.style.transform = 'translateY(-50%)';
+            text.target.style.opacity = '1';;
+        } else {
+            text.target.style.right = '-5%';
+            text.target.style.transform = 'translateY(-50%)';
+            text.target.style.opacity = '0';
+        }
+
+    })
+})
+
+let youtube_text = document.getElementsByClassName('oii-text')
+
+observer_goobtube_text.observe(youtube_text[0]);
+observer_goobtube_text.observe(youtube_text[1]);
+observer_goobtube_text.observe(youtube_text[2]);
+observer_goobtube_text.observe(youtube_text[3]);
+
+// prev, next button
+const prev = document.querySelector('.prev_arrow');
+const next = document.querySelector('.next_arrow');
+const oii = document.querySelectorAll('.oii');
+let list = 0;
+let a = 0
+
+function goobtubeButton() {
+    prev.addEventListener('click', function () {
+        for ( let j = 0; j < oii.length; j++) {
+            let classes = oii[j].classList;
+            if (classes.contains('active')) {
+                a = j;
+            }
+        }
+
+        for (let i = 0; i < oii.length; i++) {
+            oii[i].classList.remove('active')
+        }
+        a--
+        if (a == -1) { a = 3}
+        oii[a].classList.add('active')
+        console.log("🚀 ~ file: script.js:216 ~ a:", a)
+
+    })
+    next.addEventListener('click', function () {
+        for ( let j = 0; j < oii.length; j++) {
+            let classes = oii[j].classList;
+            if (classes.contains('active')) {
+                a = j;
+            }
+        }
+
+        for (let i = 0; i < oii.length; i++) {
+            oii[i].classList.remove('active')
+        }
+
+        a++
+        if (a == 4) { a = 0 }
+        oii[a].classList.add('active')
+    })
+}
+
+goobtubeButton()
