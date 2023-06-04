@@ -37,13 +37,12 @@ close.on({
 })
 
 // aside ul
-let aside_ul = $('.depth');
+let aside_ul_a = $('.depth a');
 $('.depth>ul').hide();
-aside_ul.on({
-    click: function () {
+aside_ul_a.on({click: function () {
         $('.depth>a').not($(this).find('a').toggleClass('active'));
         // $('.depth>ul').slideToggle();
-        $('.depth>ul').not($(this).find('ul').slideToggle());
+        $('.depth>ul').not($(this).parent().find('ul').slideToggle());
     }
 })
 
@@ -55,7 +54,7 @@ $('.main-vi-wrap').slick({
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
 });
 
