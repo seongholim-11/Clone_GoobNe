@@ -232,10 +232,33 @@
 .next_arrow{right: 0; background: url(../img/goobtube/Vector.png) no-repeat;}
 
 
+/* footer */
+.footer{background: #212121;}
+.footer>.inner{background: none;}
+
+.footer-up{padding: 3.5rem 0 3rem; border-bottom: 1px solid rgba(255, 255, 255, 0.5);}
+
+.fnumber{}
+.fnumber>ul{overflow: hidden; margin-top: 1rem;}
+.fnumber>ul>li{float: left; margin-right: 2rem;}
+.fnumber>ul>li>p{display: inline-block; vertical-align: middle;  color: var(--text-white);}
+.fnumber>ul>li>.sub-text{font-size: 1.9rem; font-weight: 600; margin-right: 0.5rem;}
+.fnumber>ul>li>.tel{font-size: 3.3rem; font-weight: 900;}
+
+.ftext{margin-top: 2.5rem;}
+.ftext>ul>li>a{display: block; margin-right: 2rem; font-size: 1.5rem; font-weight: 700; color: var(--text-white);}
+
+.ficon{margin-top: 2rem;}
+.ficon>ul>li{margin-right: 1.5rem;}
+.ficon>ul>li>a{display: block;}
 
 
-
-
+.footer-down{padding: 2.5rem 0 2rem; overflow: hidden;}
+.footer-down>ul{overflow: hidden; display: inline-block;}
+.footer-down>ul>li{float: left; position: relative; margin-right: 2rem; font-size: 1.1rem; color: var(--text-white); font-weight: 700;}
+.footer-down>ul>li:not(:last-child)::after{content: ""; position: absolute; top: 3px; right: -10px; width: 2px; height: 13px; background: rgba(255, 255, 255, 0.5);}
+.footer-down>ul>li>address{font-style: normal;}
+.footer-down>p{font-size: 1.1rem; color: var(--text-white); font-weight: 700; float: right;}
 
 
 
@@ -262,6 +285,9 @@
 
   /* goobster */
   .goobster-wrap{height: 25rem;}
+
+  /* footer */
+  .footer-down>p{float: none; margin-top: 1.5rem;}
 }
 
 @media screen and (max-width: 1600px) {
@@ -275,6 +301,10 @@
   .oii-text h3{font-size: 2.8rem;}
   .oii-text p{font-size: 2.3rem; margin-top: 1.8rem;}
   .oii-text a{padding: 0.7rem 1.5rem 1rem; font-size: 1.8rem; width: 11rem; margin-top: 1.8rem;}
+
+  /* footer */
+.fnumber>ul{overflow: visible; margin-top: 0rem;}
+.fnumber>ul>li{float: none; margin-right: 0rem;}
 }
 
 
@@ -299,7 +329,7 @@
   .news-text.active p{width: 40rem;}
   .news-text p{width: 30rem; font-size: 2.5rem;}
 
-      /* goobster */
+  /* goobster */
   .goobster-wrap{height: 20rem;}
   .goobster-bg7 h2{font-size: 5rem; padding-left: 8.5rem;}
   .goobster-bg7 h2 img{width: 4.5rem;}
@@ -315,6 +345,13 @@
   .oii-text h3{font-size: 2.3rem;}
   .oii-text p{font-size: 1.8rem; margin-top: 1.5rem;}
   .oii-text a{padding: 0.7rem 1.5rem 1rem; font-size: 1.5rem; width: 10rem; margin-top: 1.5rem;}
+
+  /* footer */
+.fnumber>ul>li>.sub-text{font-size: 1.5rem; margin-right: 0.5em;}
+.fnumber>ul>li>.tel{font-size: 2.8rem;}
+
+.ftext{margin-top: 2.5rem;}
+.ftext>ul>li>a{font-size: 1.3rem;}
 }
 
 
@@ -380,6 +417,9 @@
   .oii-text h3{font-size: 2rem;}
   .oii-text p{font-size: 1.5rem; margin-top: 1rem;}
   .oii-text a{padding: 0.4rem 1.3rem 0.7rem; font-size: 1.3rem; width: 8rem; margin-top: 1rem;}
+
+  /* footer */
+.footer-up{padding: 3rem 0 2.5rem; flex-wrap: wrap;}
 }
 
 @media screen and (max-width: 768px) {
@@ -445,4 +485,9 @@
   .oii-text h3{font-size: 1.8rem;}
   .oii-text p{font-size: 1.3rem; margin-top: 0.8rem;}
   .oii-text a{padding: 0.4rem 1rem 0.7rem; font-size: 1rem; width: 6rem; margin-top: 0.8rem;}
+
+    /* footer */
+.footer-up{flex-direction: column;}
+.fnumber>ul>li{float: left; margin-right: 2rem;}
+.ftext>ul, .ficon>ul{justify-content: start;}
 }
