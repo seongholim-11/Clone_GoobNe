@@ -21,6 +21,7 @@ moreBtn.on({
         $('.bar').toggleClass('toggle');
         $('.aside').slideDown();
         $('.aside-lnb').addClass('active');
+        $('.aside-bg').delay(1000).show();
     }
 })
 
@@ -147,6 +148,7 @@ $(slideBanner).on('mouseout leave', function () {
 })
 
 // Goobtube
+//img
 let observer_goobtube_img = new IntersectionObserver((item) => {
     item.forEach((img) => {
         if (img.isIntersecting) {
@@ -169,6 +171,8 @@ observer_goobtube_img.observe(youtube[1]);
 observer_goobtube_img.observe(youtube[2]);
 observer_goobtube_img.observe(youtube[3]);
 
+
+//text
 let observer_goobtube_text = new IntersectionObserver((item) => {
     item.forEach((text) => {
         if (text.isIntersecting) {

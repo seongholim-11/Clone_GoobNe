@@ -12,9 +12,10 @@
 /* header */
 #header>.inner{padding-top: 2rem; background: none;}
 .header{height: 100%;}
+h1.logo a img{width: 16rem;}
 .menu ul{margin: 0 !important;}
 .menu ul li{margin-right: 7rem;}
-.menu ul li a{display: block; font-size: 2rem; font-weight: 600;}
+.menu ul li a{display: block; font-size: 2.5rem; font-weight: 600;}
 
 .order{position: relative;}
 .order-ob-wrap{padding-top: 4rem; box-sizing: border-box; position: absolute; top: 0; left: -150%; display: none;}
@@ -89,7 +90,7 @@
 .banner-bg2{background-color: var(--base-beige); text-align: center; height: 100vh;}
 .banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
 .banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
-.banner-text p.first{margin-top: 15rem;}
+.banner-text p.first{margin-top: 30rem;}
 .banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;}
 .banner-bg2 .banner-img2>img{width: 100%; height: auto; display: block; }
 .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center; animation: updown 2s forwards ease-in-out infinite;}
@@ -117,18 +118,19 @@
 .oven-menu{height: auto;}
 .text-wrap{flex-basis: 35%; background: var(--base-white); justify-content: end;}
 .text-wrap-1{flex-direction: column; transform: rotate(-90deg); text-align: center;}
-.text-wrap-1 span{font-size: 8rem; margin-bottom: 3.5rem; font-weight: bold;  font-family: 'Righteous', cursive;}
-.text-wrap-1 span.first{padding-top: 30rem; animation: oven1 2s forwards infinite; }
+.text-wrap-1 span{font-size: 10rem; margin-bottom: 3.5rem; font-weight: bold;  font-family: 'Righteous', cursive;}
+.text-wrap-1 span.first{padding-top: 35rem; animation: oven1 2s forwards infinite; }
 .text-wrap-1 span.second{animation: oven2 2s forwards ease-out infinite;}
 .text-wrap-1 span.third{color: var(--base-red); animation: oven3 2s ease-out infinite;}
 .img-wrap{flex-basis: 65%; background: var(--base-beige);}
 .img-wrap-1{display: flex; justify-content: center; padding: 20rem 0;}
-.food{width: 300px; height: 300px; position: relative; transform: translateY(0); transition: all 1s;}
+.food{width: 30rem; height: 30rem; position: relative; transform: translateY(0); transition: all 1s;}
 .food::after{position: absolute; width: 100%; height: 50px; background: rgba(0, 0, 0, 0.5); bottom: 0; left: 0; text-align: center; font-size: 3rem; color: var(--text-white);}
 .chicken{background: url(../img/oven_menu/1.jpg) no-repeat center center/cover; margin-bottom: 7rem;}
 .chicken::after{content: "chicken";}
 .dessert{background: url(../img/oven_menu/3.jpg) no-repeat center center/cover;}
 .dessert::after{content: "dessert";}
+.img-wrap-1-1{margin-left: 7rem;}
 .img-wrap-1-2{margin: 20rem 7rem 0;}
 .pizza{background: url(../img/oven_menu/2.jpg) no-repeat center center/cover; margin-bottom: 7rem;}
 .pizza::after{content: "pizza";}
@@ -167,7 +169,7 @@
 .goobnews-pc{padding: 5rem 0; background: var(--base-beige);}
 .news-img-wrap{width: 65%;  padding: 4rem 0;}
 .news-around-wrap{text-align: center;}
-.news-around-wrap h2{font-size: 8rem; color: var(--base-red); margin-top: 5rem;}
+.news-around-wrap h2{font-size: 10rem; color: var(--base-red); margin: 5rem 0;}
 .news-around{position: relative; padding: 3rem; display: inline-block; overflow: hidden; height: 35rem;}
 .news-img{display: inline-block; width: 40rem; height: 35rem;}
 .news-img img{width: 100%; height: 100%;}
@@ -184,7 +186,7 @@
 .news-text{flex-basis: 20%; width: 100%; border: 1px solid #ddd; box-sizing: border-box;}
 .news-content.active{background: var(--base-red); width: 130%; transform: translateX(-11.5%);}
 .news-text.active p{color: var(--text-white); width: 70rem;}
-.news-title h3{font-size: 5rem; margin-bottom: 2rem;}
+.news-title h3{font-size: 6rem;}
 .news-text p{margin: 0 auto; display: block; width: 55rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 3rem; }
 .goobnews-m{display: none;}
 
@@ -194,7 +196,7 @@
 .goobster-bg3{flex-basis: 30%;}
 .goobster-bg5{flex-basis: 50%;}
 .goobster-bg7{flex-basis: 70%; text-align: center; justify-content: center;}
-.goobster-bg7 h2{font-size: 8rem; padding-left: 8.5rem; color: #D4000B;}
+.goobster-bg7 h2{font-size: 10rem; padding-left: 8.5rem; color: #D4000B;}
 .goobster-bg7 h2 img{filter: invert(15%) sepia(92%) saturate(4626%) hue-rotate(349deg) brightness(79%) contrast(116%);}
 .goobster-beige{background: var(--base-beige); line-height: 100%;}
 
@@ -207,8 +209,8 @@
 
 /* goobtube */
 .goobtube{background: var(--base-beige);}
-.goobtube h2{font-size: 8rem; text-align: center; color: var(--base-red);}
-.nfmc{overflow: hidden; background: transparent; justify-content: center; height: 9rem; border-top: 1px solid #050000; border-bottom: 1px solid #050000; box-sizing: border-box; margin: 9rem 0;}
+.goobtube h2{font-size: 10rem; text-align: center; color: var(--base-red); margin-top: 5rem;}
+.nfmc{overflow: hidden; background: transparent; justify-content: center; height: 9rem; border-top: 1px solid #050000; border-bottom: 1px solid #050000; box-sizing: border-box; margin: 8rem 0;}
 .nfmc ul{width: calc(430px * 15);}
 .nfmc ul li{justify-content: center; font-size: 3.2rem; font-family: 'Rubik'; font-weight: 600; width: 43rem; animation: textSlide 25s forwards linear infinite;}
 
@@ -265,12 +267,16 @@
 
 
 
-@media screen and (max-width: 1800px) {
-  .img-wrap-1{ padding: 10rem 0;}
-  .text-wrap-1 span{font-size: 5rem;}
-  .text-wrap-1 span.first{padding-top: 18rem;}
-  .food{width: 20rem; height: 20rem;}
-  .food::after{height: 4rem; font-size: 2rem;}
+@media screen and (max-width: 1799px) {
+  /* banner */
+  .banner-text p.first{margin-top: 20rem;}
+
+  /* oven menu */
+  .img-wrap-1{ padding: 15rem 0;}
+  .text-wrap-1 span{font-size: 8rem;}
+  .text-wrap-1 span.first{padding-top: 30rem;}
+  .food{width: 27rem; height: 27rem;}
+  .food::after{height: 4.5rem; font-size: 2.5rem;}
   .chicken{margin-bottom: 4rem;}
   .pizza{margin-bottom: 4rem;}
   .img-wrap-1-2{margin: 15rem 4rem 0;}
@@ -289,7 +295,16 @@
   .footer-down>p{float: none; margin-top: 1.5rem;}
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
+  /* banner */
+  .banner-bg2>.banner-text p{font-size: 6rem;}
+  .banner-text p.first{margin-top: 15rem;}
+  .banner-bg2 .banner-img2{width: 100rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn1{top: 3rem; left: -5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn2{top: 30rem; right: -5rem; }
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 38rem; left: 0rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 9rem; right: 4rem;}
+
   /* goobtube */
   .goobtube h2{font-size: 6rem;}
   .nfmc{ margin: 4rem 0; height: 8rem;}
@@ -307,16 +322,22 @@
 }
 
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1349px) {
+  /* header */
+  h1.logo a img{width: 13rem;}
+  .menu ul li a{font-size: 2rem;}
+  .menu ul li{margin-right: 5rem;}
+
   /* banner */
-  .banner-bg2>.banner-text p{font-size: 6rem;}
-  .banner-text p.first{margin-top: 5rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 15rem; height: 6rem; font-size: 3rem;  top: 30rem; left: 5rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 15rem; height: 6rem; font-size: 3rem; top: 7rem; right: 5rem;}
+  .banner-bg2>.banner-text p{font-size: 5rem;}
+  .banner-text p.first{margin-top: 10rem;}
+  .banner-bg2 .banner-img2{width: 80rem;}
   .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 23rem; height: 20rem; background-size: 100%; position: absolute; top: 3rem; left: -1rem; display: block;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 15rem; height: 6rem; font-size: 2.3rem; top: 7rem; right: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 15rem; height: 6rem; font-size: 2.3rem; top: 30rem; left: 5rem;}
   .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 21rem; height: 18rem; background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.8rem; margin-bottom: 3rem; margin-left: 1rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 3rem;}
 
   /* goobnews */
   .news-around{height: 28rem;}
@@ -354,14 +375,16 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   /* header */
   #header{padding: 2rem 0;}
   #header>.inner{padding-top: 1rem;}
+  h1.logo a img{width: 8rem;}
   .order-ob-wrap{top: -20%; left: -200%;}
   .menu ul li{margin-right: 4rem;}
   .menu ul li a{font-size: 1.5rem;}
   .more-btn img{width: 25px; height: 20px;}
+
   /* aside */
   .aside-lnb{max-width: 35rem;}
   .aside-inner{padding: 3rem; padding-left: 4rem;}
@@ -370,16 +393,19 @@
   .aside-inner .aside-login a{font-size: 1.5rem;}
   .aside_scroll>ul>li>a{font-size: 2rem;}
   .depth>ul>li>a{font-size: 1.3rem;}
+
   /* banner */
-  .banner-bg2>.banner-text p{font-size: 5rem;}
-  .banner-bg2 .banner-img2{width: 80rem;}
+  .banner-bg2>.banner-text p{font-size: 4rem;}
+  .banner-bg2 .banner-img2{width: 60rem;}
   .banner-text p.first{margin-top: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 17rem; height: 12rem; font-size: 2rem; top: 3rem; left: -1rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.2rem; margin-bottom: 0rem; margin-left: 0rem; margin-top: 0.5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 180px; height: 150px;background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
   .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 13rem; height: 4rem; font-size: 2rem;  top: 30rem; left: 5rem;}
   .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 13rem; height: 4rem; font-size: 2rem; top: 7rem; right: 5rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 200px; height: 180px;background-size: 100%; position: absolute; top: 3rem; left: -1rem; display: block;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 180px; height: 150px;background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem; margin-bottom: 2rem; margin-left: 1rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+ 
+
   /* oven menu */
   .text-wrap-1 span{font-size: 4rem; margin-bottom: 2rem; }
   .text-wrap-1 span.first{padding-top: 15rem;}
