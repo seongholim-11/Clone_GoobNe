@@ -117,8 +117,8 @@ h1.logo a img{width: 16rem;}
 }
 
 /* goobnew */
-.goobnews-pc{padding: 5rem 0; background: var(--base-beige);}
-.news-img-wrap{width: 65%;  padding: 4rem 0;}
+.goobnews-pc{background: var(--base-beige);}
+.news-img-wrap{width: 65%;  padding: 10rem 0;}
 .news-around-wrap{text-align: center;}
 .news-around-wrap h2{font-size: 10rem; color: var(--base-red); margin: 5rem 0;}
 .news-around{position: relative; padding: 3rem; display: inline-block; overflow: hidden; height: 35rem;}
@@ -138,7 +138,7 @@ h1.logo a img{width: 16rem;}
 .news-content.active{background: var(--base-red); width: 130%; transform: translateX(-11.5%);}
 .news-text.active p{color: var(--text-white); width: 70rem;}
 .news-title h3{font-size: 6rem;}
-.news-text p{margin: 0 auto; display: block; width: 55rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 3rem; }
+.news-text p{margin: 0 auto; display: block; width: 55rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 3.5rem; }
 .goobnews-m{display: none;}
 
 /* oven-menu */
@@ -198,7 +198,7 @@ h1.logo a img{width: 16rem;}
 .goobster-bg5{flex-basis: 50%;}
 .goobster-bg7{flex-basis: 70%; text-align: center; justify-content: center;}
 .goobster-bg7 h2{font-size: 10rem; padding-left: 8.5rem; color: #D4000B;}
-.goobster-bg7 h2 img{filter: invert(15%) sepia(92%) saturate(4626%) hue-rotate(349deg) brightness(79%) contrast(116%);}
+.goobster-bg7 h2 img{filter: invert(15%) sepia(92%) saturate(4626%) hue-rotate(349deg) brightness(79%) contrast(116%); width: 8rem;}
 .goobster-beige{background: var(--base-beige); line-height: 100%;}
 
 .goobster-img{position: absolute; top: 60%; left: 0; transform: translateY(-50%); background: #D4000B; overflow: hidden;}
@@ -263,17 +263,18 @@ h1.logo a img{width: 16rem;}
 .footer-down>p{font-size: 1.1rem; color: var(--text-white); font-weight: 700; float: right;}
 
 
-
-
-
-
-
 @media screen and (max-width: 1799px) {
   /* banner */
   .banner-bg2 .banner-text p{font-size: 6.5rem;}
   .banner-img{max-width: 1000px;}
   .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem;}
   .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 3rem;}
+
+  /* goobnews */
+  .news-around-wrap h2{font-size: 8rem;}
+  .news-title h3{font-size: 5rem;}
+  .news-text.active p{width: 55rem;}
+  .news-text p{width: 45rem;}
 
   /* oven menu */
   .img-wrap-1{ padding: 15rem 0;}
@@ -285,15 +286,12 @@ h1.logo a img{width: 16rem;}
   .pizza{margin-bottom: 4rem;}
   .img-wrap-1-2{margin: 15rem 4rem 0;}
 
-  /* goobnews */
-  .goobnews-pc{padding: 5rem 0;}
-  .news-around-wrap h2{margin: 1rem 0; font-size: 6rem;}
-  .news-title h3{font-size: 5rem; margin: 2rem 0;}
-  .news-text.active p{width: 55rem;}
-  .news-text p{width: 45rem;}
-
   /* goobster */
   .goobster-wrap{height: 25rem;}
+  .goobster-bg7 h2{font-size: 8rem;}
+  .goobster-bg7 h2 img{width: 6rem;}
+
+  .goobtube h2{font-size: 8rem;}
 
   /* footer */
   .footer-down>p{float: none; margin-top: 1.5rem;}
@@ -305,6 +303,24 @@ h1.logo a img{width: 16rem;}
   .banner-img{max-width: 900px;}
   .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem;}
   .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2.8rem;}
+
+  /* goobnews */
+  .news-around-wrap h2{font-size: 6rem;}
+  .news-around{height: 30rem;}
+  .news-img{width: 35rem; height: 30rem;}
+  .news-title h3{font-size: 4rem;}
+  .news-text.active p{width: 50rem;}
+  .news-text p{width: 40rem; font-size: 3rem;}
+
+  /* oven menu */
+  .text-wrap-1 span.first{padding-top: 22rem;}
+  .text-wrap-1 span{font-size: 6rem;}
+  .img-wrap-1-1{margin-left: 10rem;}
+
+  /* goobster */
+  .goobster-wrap{height: 20rem;}
+  .goobster-bg7 h2{font-size: 6rem;}
+  .goobster-bg7 h2 img{width: 5rem;}
 
   /* goobtube */
   .goobtube h2{font-size: 6rem;}
@@ -339,22 +355,31 @@ h1.logo a img{width: 16rem;}
   .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{font-size: 1.8rem;}
 
   /* goobnews */
-  .news-around{height: 28rem;}
-  .goobnews-pc{padding: 5rem 0;}
-  .news-around-wrap h2{margin: 1rem 0; font-size: 5rem;}
-  .news-img{ width: 30rem; height: 28rem;}
-  .news-img img{height: 28.5rem;}
-  .news-title h3{font-size: 4rem; margin: 2rem 0;}
-  .news-text.active p{width: 40rem;}
-  .news-text p{width: 30rem; font-size: 2.5rem;}
+  .news-img-wrap {padding: 7rem 0;}
+  .news-around-wrap h2{font-size: 6rem;}
+  .news-around{height: 25rem;}
+  .news-img{ width: 30rem; height: 25rem;}
+  .news-title h3{font-size: 4rem;}
+  .news-text.active p{width: 35rem;}
+  .news-text p{width: 30rem;}
+
+  /* oven menu */
+  .img-wrap-1{ padding: 10rem 0;}
+  .text-wrap-1 span{font-size: 6rem;}
+  .text-wrap-1 span.first{padding-top: 22rem;}
+  .food{width: 20rem; height: 20rem;}
+  .food::after{height: 4rem; font-size: 2rem;}
+  .chicken{margin-bottom: 3rem;}
+  .pizza{margin-bottom: 4rem;}
+  .img-wrap-1-2{margin: 10rem 3rem 0;}
 
   /* goobster */
-  .goobster-wrap{height: 20rem;}
-  .goobster-bg7 h2{font-size: 5rem; padding-left: 8.5rem;}
-  .goobster-bg7 h2 img{width: 4.5rem;}
+  .goobster-wrap{height: 18rem;}
+  .goobster-bg7 h2{font-size: 6rem; padding-left: 8.5rem;}
+  .goobster-bg7 h2 img{width: 4rem;}
 
   /* goobtube */
-  .goobtube h2{font-size: 5rem;}
+  .goobtube h2{font-size: 6rem;}
   .nfmc{ margin: 4rem 0; height: 7rem;}
   .nfmc ul li{font-size: 2.5rem; width: 35rem;}
 
@@ -401,31 +426,34 @@ h1.logo a img{width: 16rem;}
   .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{font-size: 1.5rem;}
   .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{font-size: 1.3rem;}
  
+  /* goobnew */
+  .goobnews-pc{display: none;}
+  .goobnews-m{display: block; text-align: center; background: var(--base-beige); padding: 5rem 0;}
+  .goobnews-m .inner{background: none; width: 90%;}
+  .goobnews-m h3{font-size: 5rem; color: var(--base-red); padding-bottom: 3rem;}
+  .goobnews-m ul{display: flex; flex-direction: column;}
+  .goobnews-m ul>li{display: flex; flex-basis: 30%; margin-bottom: 1rem; padding-bottom: 1rem; text-align: left; align-items: center; border-bottom: 1px solid #000;}
+  .goobnews-m ul>li .mgoobnews-img{width: 10rem; padding-right: 2rem;}
+  .goobnews-m ul>li .mgoobnews-img img{width: 10rem;}
+  .goobnews-m ul>li .mgoobnews-text{flex-basis: 70%;}
+  .goobnews-m ul>li .mgoobnews-text h4{font-size: 2.5rem;}
+  .goobnews-m ul>li .mgoobnews-text p{font-size: 2rem; width: 70vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
   /* oven menu */
-  .text-wrap-1 span{font-size: 4rem; margin-bottom: 2rem; }
-  .text-wrap-1 span.first{padding-top: 15rem;}
+  .img-wrap-1{ padding: 6rem 0 6rem 5rem;}
+  .text-wrap-1 span{font-size: 5rem; margin-bottom: 2rem; }
+  .text-wrap-1 span.first{padding-top: 18rem;}
   .food{width: 15rem; height: 15rem;}
   .food::after{height: 3rem; font-size: 1.5rem;}
   .chicken{margin-bottom: 2rem;}
   .pizza{margin-bottom: 2rem;}
-  .img-wrap-1{ padding: 10rem 0 10rem 5rem;}
+  .img-wrap-1-1{margin-left: 5rem;}
   .img-wrap-1-2{margin: 8rem 2rem 0;}
-
-  /* goobnew */
-  .goobnews-pc{padding: 2rem 0;}
-  .news-around{height: 23rem;}
-  .news-around-wrap h2{margin: 0.5rem 0; font-size: 5rem;}
-  .news-img{ width: 25rem; height: 23rem;}
-  .news-img img{height: 23rem;}
-  .news-img img{height: 100%;}
-  .news-text.active p{width: 35rem;}
-  .news-title h3{font-size: 3rem; margin: 0.5rem 0;}
-  .news-text p{width: 25rem; font-size: 2.5rem; }
 
   /* goobster */
   .goobster-wrap{height: 15rem;}
   .goobster-bg7 h2{font-size: 5rem;}
-  .goobster-bg7 h2 img{width: 3.5rem;}
+  .goobster-bg7 h2 img{width: 3rem;}
 
   /* goobtube */
   .goobtube h2{font-size: 4rem;}
@@ -460,7 +488,7 @@ h1.logo a img{width: 16rem;}
   /* oven-menu */
   .text-wrap{display: none;}
   .img-wrap{display: none;}
-  .oven-mobile{display: block; background: var(--base-beige);} 
+  .oven-mobile{display: block; background: var(--base-beige); width: 100%;} 
   .oven-mobile h2{font-size: 5rem; font-weight: bold; color: var(--base-red); text-align: center; margin: 4rem 0;}
   .oven-slide-wrap{ padding: 3rem 0 5rem; margin: 0 auto; max-width: 96.7vw; width: 100%; overflow: hidden;}
   .mfood{width: 20rem; margin: 0 2.5rem; position: relative; border-radius: 10px;}
@@ -472,23 +500,10 @@ h1.logo a img{width: 16rem;}
   .mfood:nth-child(2n){margin-top: 5rem;}
   .mfood img{width: 100%; border-radius: 10px;}
 
-  /* goobnews */
-  .goobnews-pc{display: none;}
-  .goobnews-m{display: block; text-align: center; background: var(--base-beige);}
-  .goobnews-m .inner{background: none; width: 100%;}
-  .goobnews-m h3{font-size: 4.5rem; color: var(--base-red); margin-bottom: 3rem;}
-  .goobnews-m ul{display: flex; flex-direction: column;}
-  .goobnews-m ul>li{display: flex; flex-basis: 30%; margin-bottom: 1rem; padding-bottom: 1rem; text-align: left; align-items: center; border-bottom: 1px solid #000;}
-  .goobnews-m ul>li .mgoobnews-img{width: 10rem; padding-right: 2rem;}
-  .goobnews-m ul>li .mgoobnews-img img{width: 10rem;}
-  .goobnews-m ul>li .mgoobnews-text{flex-basis: 70%;}
-  .goobnews-m ul>li .mgoobnews-text h4{font-size: 2.5rem;}
-  .goobnews-m ul>li .mgoobnews-text p{font-size: 2rem;}
-
   /* goobster */
   .goobster-wrap{height: 13rem;}
-  .goobster-bg7 h2{font-size: 4rem;}
-  .goobster-bg7 h2 img{width: 3rem;}
+  .goobster-bg7 h2{font-size: 5rem;}
+  .goobster-bg7 h2 img{width: 4rem;}
 
   /* goobtube */
   .goobtube h2{font-size: 4rem;}

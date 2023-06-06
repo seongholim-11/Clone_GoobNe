@@ -152,11 +152,11 @@ $(slideBanner).on('mouseout leave', function () {
 let observer_goobtube_img = new IntersectionObserver((item) => {
     item.forEach((img) => {
         if (img.isIntersecting) {
-            img.target.style.left = '9%';
+            img.target.style.left = '10%';
             img.target.style.transform = 'translateY(-50%)';
             img.target.style.opacity = '1';;
         } else {
-            img.target.style.left = '-5%';
+            img.target.style.left = '-20%';
             img.target.style.transform = 'translateY(-50%)';
             img.target.style.opacity = '0';
         }
@@ -176,11 +176,11 @@ observer_goobtube_img.observe(youtube[3]);
 let observer_goobtube_text = new IntersectionObserver((item) => {
     item.forEach((text) => {
         if (text.isIntersecting) {
-            text.target.style.right = '9%';
+            text.target.style.right = '10%';
             text.target.style.transform = 'translateY(-50%)';
             text.target.style.opacity = '1';;
         } else {
-            text.target.style.right = '-5%';
+            text.target.style.right = '-20%';
             text.target.style.transform = 'translateY(-50%)';
             text.target.style.opacity = '0';
         }
