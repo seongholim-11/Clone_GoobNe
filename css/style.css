@@ -1,7 +1,7 @@
 
 /* layout */
 #header{width: 100%; padding: 3rem 0; background: transparent;  position: absolute; top: 0; left: 0; z-index: 999; }
-#header.drop{position: fixed; animation: dropheader 0.3s; background: var(--base-beige);}
+#header.drop{position: fixed; animation: dropheader 0.3s; background: var(--base-beige); width: 100%; top: 0; left: 0;}
 #content{display: flex; flex-direction: column;}
 
 @keyframes dropheader {
@@ -92,7 +92,7 @@ h1.logo a img{width: 16rem;}
 .banner-bg2{background-color: var(--base-beige); text-align: center; height: 70vh; max-height: 144rem; position: relative;}
 .banner-bg2-wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .banner-bg2 .banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
-.banner-bg2 .banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
+.banner-bg2 .banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.2; position: relative; display: inline-block;}
 .banner-bg2 a{display: block;}
 .banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 50vw;}
 .banner-bg2 .banner-img2 img{width: 100%; height: auto; display: block; }
@@ -219,7 +219,7 @@ h1.logo a img{width: 16rem;}
   100%{transform: translateX(-500%);}
 }
 
-.out-in-img.inner{position: relative; background: none;}
+.out-in-img.inner{position: relative; background: none; width: 180rem; overflow: hidden;}
 .oii{display: none; position: relative; width: 100%; height: 50rem;}
 .oii.active{display: block;}
 .oii-img, .oii-text{position: absolute; top: 50%; transform: translateY(-50%); transition: all 1.5s;}
@@ -293,6 +293,8 @@ h1.logo a img{width: 16rem;}
 
   .goobtube h2{font-size: 8rem;}
 
+  .out-in-img.inner{width: 1600px;}
+
   /* footer */
   .footer-down>p{float: none; margin-top: 1.5rem;}
 }
@@ -327,6 +329,7 @@ h1.logo a img{width: 16rem;}
   .nfmc{ margin: 4rem 0; height: 8rem;}
   .nfmc ul li{font-size: 3rem; width: 40rem;}
 
+  .out-in-img.inner{width: 1350px;}
   .oii{height: 40rem;}
   .oii-img img{width: 48rem; height: 30rem;}
   .oii-text h3{font-size: 2.8rem;}
