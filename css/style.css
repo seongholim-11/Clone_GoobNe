@@ -18,10 +18,11 @@ h1.logo a img{width: 16rem;}
 .menu ul li a{display: block; font-size: 2.5rem; font-weight: 600;}
 
 .order{position: relative;}
-.order-ob-wrap{padding-top: 4rem; box-sizing: border-box; position: absolute; top: 0; left: -150%; display: none;}
+.order-ob-wrap{padding-top: 5rem; box-sizing: border-box; position: absolute; top: 0; left: -120%; display: none;}
 .order-ob{width: 30rem; height: 6.5rem; background: #fff; border-radius: 6px; border: 1px solid #000; display: flex; align-items:center; justify-content: center; box-sizing: border-box;}
 .order:hover>.order-ob-wrap{display: block;}
-.order-ob>button{height: 3rem; font-weight: 800; margin-right: 2rem; padding: 1rem 0; box-sizing: content-box; background: #fff; font-size: 1.6rem; cursor: pointer; display: block; display: flex; align-items: center;}
+.order-ob>button{height: 3rem; font-weight: 800; padding: 1rem 0; box-sizing: content-box; background: #fff; font-size: 1.6rem; cursor: pointer; display: block; display: flex; align-items: center;}
+.order-ob>button:nth-of-type(1){margin-right: 2rem; }
 .order-ob>button img{width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;}
 
 
@@ -82,23 +83,25 @@ h1.logo a img{width: 16rem;}
 .main-slick-wrap:hover{cursor : url(../img/Frame01.png), auto;}
 .main-vi-wrap img:hover{cursor : url(../img/Frame01.png), auto;}
 .banner-bg{width: 100%; position: relative; position: relative;}
-.banner-bg img.banner-bg-img{height: 100vh;}
-.banner-bg img{width: 100%; height: auto; display: block; }
-.banner-img{width: 80%; position: absolute; top: 50%; left: 50%; vertical-align: middle; max-width: 1400px; margin: auto; transform: translate(-50%, -50%);}
-.banner-img a img{display: inline-block;}
+.banner-bg img.banner-bg-img{height: 70vh; max-height: 144rem;}
+.banner-bg>img{width: 100%; height: auto; display: block; }
+.banner-img{width: 100%; position: absolute; top: 50%; left: 50%; max-width: 1200px; transform: translate(-50%, -50%); text-align: center;}
+.banner-img a{display: block;}
+.banner-img a img{width: 100%; display: inline-block;}
 
-.banner-bg2{background-color: var(--base-beige); text-align: center; height: 100vh;}
-.banner-bg2>.banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
-.banner-bg2>.banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
-.banner-text p.first{margin-top: 30rem;}
-.banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 120rem;}
-.banner-bg2 .banner-img2>img{width: 100%; height: auto; display: block; }
-.banner-bg2 .banner-img2 .goobne-btn.btn1{width: 280px; height: 220px; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 11rem; left: -7rem; display: block; text-align: center; animation: updown 2s forwards ease-in-out infinite;}
-.banner-bg2 .banner-img2 .goobne-btn span{display: inline-block; font-size: 2.1rem; transform: rotate(-27deg); margin-bottom: 1rem; font-weight: bold;}
-.banner-bg2 .banner-img2 .goobne-btn span em{color: #D4000B; font-weight: 900; font-size: 3.8rem;}
-.banner-bg2 .banner-img2 .goobne-btn.btn2{width: 250px; height: 250px; background: url(../img/banner/chi/main_bg_icon_05.svg) no-repeat; background-size: 80%; position: absolute; top: 33rem; right: -7rem; animation: updown 2s forwards ease-in-out infinite;}
-.banner-bg2 .banner-img2 .goobne-menu-btn.btn1{background: #AABBFF; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(-20deg); position: absolute; top: 45rem; left: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
-.banner-bg2 .banner-img2 .goobne-menu-btn.btn2{background: #FFAC9F; width: 17rem; height: 5.5rem; font-size: 2.6rem; transform: rotate(10deg); position: absolute; top: 14rem; right: 5rem; box-shadow: 5px 5px #000; font-weight: 700;}
+.banner-bg2{background-color: var(--base-beige); text-align: center; height: 70vh; max-height: 144rem; position: relative;}
+.banner-bg2-wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.banner-bg2 .banner-text{color: #D4000B; font-weight: 700; -webkit-text-stroke: 1px #D4000B; font-family: 'Rubik'; text-align: center; letter-spacing: 0.8px;  position: relative;}
+.banner-bg2 .banner-text p{font-size: 7rem; text-shadow: 5px 0px rgb(0, 0, 0); line-height: 1.5; position: relative; display: inline-block;}
+.banner-bg2 a{display: block;}
+.banner-bg2 .banner-img2{position: relative; display: inline-block; text-align: center; width: 50vw;}
+.banner-bg2 .banner-img2 img{width: 100%; height: auto; display: block; }
+.banner-bg2 .banner-img2 .goobne-btn.btn1{width: 28%; height: 42%; background: url(../img/banner/chi/main_bg_icon_01.png) no-repeat; background-size: 100%; position: absolute; top: 3%; left: -3%; display: block; text-align: center; animation: updown 2s forwards ease-in-out infinite;}
+.banner-bg2 .banner-img2 .goobne-btn span{display: inline-block; font-size: 1.8rem; transform: rotate(-27deg); margin-bottom: 1rem; font-weight: bold;}
+.banner-bg2 .banner-img2 .goobne-btn span em{color: #D4000B; font-weight: 900; font-size: 3.5rem;}
+.banner-bg2 .banner-img2 .goobne-btn.btn2{width: 20%; height: 38%; background: url(../img/banner/chi/main_bg_icon_05.svg) no-repeat; background-size: 100%; position: absolute; bottom: 2%; right: 2%; animation: updown 2s forwards ease-in-out infinite;}
+.banner-bg2 .banner-img2 .goobne-menu-btn.btn1{background: #AABBFF; width: 20%; height: 12%; font-size: 2.6rem; transform: rotate(-20deg); position: absolute; bottom: 15%; left: 0%; box-shadow: 5px 5px #000; font-weight: 700;}
+.banner-bg2 .banner-img2 .goobne-menu-btn.btn2{background: #FFAC9F; width: 20%; height: 12%; font-size: 2.6rem; transform: rotate(10deg); position: absolute; top: 12%; right: 3%; box-shadow: 5px 5px #000; font-weight: 700;}
 
 .slick-dots{bottom: 10rem;}
 .slick-dots li button{opacity: 0.5; background: #fff;  border-radius: 50%; width: 10px; height: 10px;}
@@ -113,6 +116,30 @@ h1.logo a img{width: 16rem;}
   100%{transform: translateY(-15px);}
 }
 
+/* goobnew */
+.goobnews-pc{padding: 5rem 0; background: var(--base-beige);}
+.news-img-wrap{width: 65%;  padding: 4rem 0;}
+.news-around-wrap{text-align: center;}
+.news-around-wrap h2{font-size: 10rem; color: var(--base-red); margin: 5rem 0;}
+.news-around{position: relative; padding: 3rem; display: inline-block; overflow: hidden; height: 35rem;}
+.news-img{display: inline-block; width: 40rem; height: 35rem;}
+.news-img img{width: 100%; height: 100%;}
+.news-around-text-wrap{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.news-around-text{height: 3rem; position: absolute; background: var(--base-red);}
+.news-around-text:nth-child(1){top: 0; left: 0; z-index: 1;}
+.news-around-text:nth-child(2){top: 300%; right: 0; transform-origin: top right; transform: rotate(90deg); z-index: 2;}
+.news-around-text:nth-child(3){top: 100%; left: 0; transform-origin: top left; transform: rotate(270deg); z-index: 4;}
+.news-around-text:nth-child(4){right: 0; bottom: 0; transform: rotate(180deg); z-index: 3;}
+.text-goobne{color: var(--text-white); font-size: 2rem; transform: translateX(0%);}
+
+.news-text-wrap{width: 35%; background: var(--base-white); flex-direction: column;}
+.news-title{font-size: 5rem; justify-content: center;}
+.news-text{flex-basis: 20%; width: 100%; border: 1px solid #ddd; box-sizing: border-box;}
+.news-content.active{background: var(--base-red); width: 130%; transform: translateX(-11.5%);}
+.news-text.active p{color: var(--text-white); width: 70rem;}
+.news-title h3{font-size: 6rem;}
+.news-text p{margin: 0 auto; display: block; width: 55rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 3rem; }
+.goobnews-m{display: none;}
 
 /* oven-menu */
 .oven-menu{height: auto;}
@@ -163,32 +190,6 @@ h1.logo a img{width: 16rem;}
   80%{opacity: 1;}
   100%{opacity: 1;}
 }
-
-
-/* goobnew */
-.goobnews-pc{padding: 5rem 0; background: var(--base-beige);}
-.news-img-wrap{width: 65%;  padding: 4rem 0;}
-.news-around-wrap{text-align: center;}
-.news-around-wrap h2{font-size: 10rem; color: var(--base-red); margin: 5rem 0;}
-.news-around{position: relative; padding: 3rem; display: inline-block; overflow: hidden; height: 35rem;}
-.news-img{display: inline-block; width: 40rem; height: 35rem;}
-.news-img img{width: 100%; height: 100%;}
-.news-around-text-wrap{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.news-around-text{height: 3rem; position: absolute; background: var(--base-red);}
-.news-around-text:nth-child(1){top: 0; left: 0; z-index: 1;}
-.news-around-text:nth-child(2){top: 300%; right: 0; transform-origin: top right; transform: rotate(90deg); z-index: 2;}
-.news-around-text:nth-child(3){top: 100%; left: 0; transform-origin: top left; transform: rotate(270deg); z-index: 4;}
-.news-around-text:nth-child(4){right: 0; bottom: 0; transform: rotate(180deg); z-index: 3;}
-.text-goobne{color: var(--text-white); font-size: 2rem; transform: translateX(0%);}
-
-.news-text-wrap{width: 35%; background: var(--base-white); flex-direction: column;}
-.news-title{font-size: 5rem; justify-content: center;}
-.news-text{flex-basis: 20%; width: 100%; border: 1px solid #ddd; box-sizing: border-box;}
-.news-content.active{background: var(--base-red); width: 130%; transform: translateX(-11.5%);}
-.news-text.active p{color: var(--text-white); width: 70rem;}
-.news-title h3{font-size: 6rem;}
-.news-text p{margin: 0 auto; display: block; width: 55rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 3rem; }
-.goobnews-m{display: none;}
 
 /* goobster */
 .goobster{position: relative;}
@@ -269,7 +270,10 @@ h1.logo a img{width: 16rem;}
 
 @media screen and (max-width: 1799px) {
   /* banner */
-  .banner-text p.first{margin-top: 20rem;}
+  .banner-bg2 .banner-text p{font-size: 6.5rem;}
+  .banner-img{max-width: 1000px;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 3rem;}
 
   /* oven menu */
   .img-wrap-1{ padding: 15rem 0;}
@@ -297,13 +301,10 @@ h1.logo a img{width: 16rem;}
 
 @media screen and (max-width: 1599px) {
   /* banner */
-  .banner-bg2>.banner-text p{font-size: 6rem;}
-  .banner-text p.first{margin-top: 15rem;}
-  .banner-bg2 .banner-img2{width: 100rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn1{top: 3rem; left: -5rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn2{top: 30rem; right: -5rem; }
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 38rem; left: 0rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 9rem; right: 4rem;}
+  .banner-bg2 .banner-text p{font-size: 6rem;}
+  .banner-img{max-width: 900px;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2.8rem;}
 
   /* goobtube */
   .goobtube h2{font-size: 6rem;}
@@ -327,17 +328,15 @@ h1.logo a img{width: 16rem;}
   h1.logo a img{width: 13rem;}
   .menu ul li a{font-size: 2rem;}
   .menu ul li{margin-right: 5rem;}
+  .order-ob-wrap{left: -150%;}
 
   /* banner */
-  .banner-bg2>.banner-text p{font-size: 5rem;}
-  .banner-text p.first{margin-top: 10rem;}
-  .banner-bg2 .banner-img2{width: 80rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 23rem; height: 20rem; background-size: 100%; position: absolute; top: 3rem; left: -1rem; display: block;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 15rem; height: 6rem; font-size: 2.3rem; top: 7rem; right: 5rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 15rem; height: 6rem; font-size: 2.3rem; top: 30rem; left: 5rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 21rem; height: 18rem; background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.8rem; margin-bottom: 3rem; margin-left: 1rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 3rem;}
+  .banner-img{max-width: 800px;}
+  .banner-bg2 .banner-text p{font-size: 5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.1rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{font-size: 2rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{font-size: 1.8rem;}
 
   /* goobnews */
   .news-around{height: 28rem;}
@@ -395,17 +394,13 @@ h1.logo a img{width: 16rem;}
   .depth>ul>li>a{font-size: 1.3rem;}
 
   /* banner */
-  .banner-bg2>.banner-text p{font-size: 4rem;}
-  .banner-bg2 .banner-img2{width: 60rem;}
-  .banner-text p.first{margin-top: 5rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 17rem; height: 12rem; font-size: 2rem; top: 3rem; left: -1rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 1.2rem; margin-bottom: 0rem; margin-left: 0rem; margin-top: 0.5rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 2rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 180px; height: 150px;background-size: 80%; position: absolute; top: 23rem; right: -1rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{width: 13rem; height: 4rem; font-size: 2rem;  top: 30rem; left: 5rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{width: 13rem; height: 4rem; font-size: 2rem; top: 7rem; right: 5rem;}
+  .banner-img{max-width: 550px;}
+  .banner-bg2 .banner-text p{font-size: 4rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 0.8rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{font-size: 1.3rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{font-size: 1.5rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{font-size: 1.3rem;}
  
-
   /* oven menu */
   .text-wrap-1 span{font-size: 4rem; margin-bottom: 2rem; }
   .text-wrap-1 span.first{padding-top: 15rem;}
@@ -415,6 +410,7 @@ h1.logo a img{width: 16rem;}
   .pizza{margin-bottom: 2rem;}
   .img-wrap-1{ padding: 10rem 0 10rem 5rem;}
   .img-wrap-1-2{margin: 8rem 2rem 0;}
+
   /* goobnew */
   .goobnews-pc{padding: 2rem 0;}
   .news-around{height: 23rem;}
@@ -447,24 +443,19 @@ h1.logo a img{width: 16rem;}
 .footer-up{padding: 3rem 0 2.5rem; flex-wrap: wrap;}
 }
 
-@media screen and (max-width: 768px) {
-  #header{padding: 1rem 0;}
+@media screen and (max-width: 767px) {
+  #header{padding: 2rem 0;}
   #header>.inner{padding: 0;}
   .menu{display: none;}
-  .more-btn img{width: 30px; height: 25px;}
+  .more-btn{width: 30px; height: 18px;}
 
   /* banner */
-  .banner-bg img.banner-bg-img{height: 80vh;}
-  .banner-bg2{height: 80vh;}
-  .banner-bg2>.banner-text p{font-size: 4rem;}
-  .banner-bg2 .banner-img2{width: 40rem;}
-  .banner-text p.first{margin-top: 4rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn1{width: 180px; height: 150px; top: 0rem; left: -6rem;}
-  .banner-bg2 .banner-img2 .goobne-btn.btn2{width: 150px; height: 130px; top: 10rem; right: -6rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span{margin-right: 1rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn{width: 5rem; height: 2rem; font-size: 2rem;  }
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{top: 16rem; left: -4rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{top: 3rem; right: -4rem;}
+  .banner-img{max-width: 500px;}
+  .banner-bg2 .banner-text p{font-size: 4rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span{font-size: 0.3rem; margin-bottom: 1.5rem;}
+  .banner-bg2 .banner-img2 .goobne-btn span em{display: none;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{font-size: 1.2rem;}
+  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{font-size: 1.2rem;}
 
   /* oven-menu */
   .text-wrap{display: none;}
