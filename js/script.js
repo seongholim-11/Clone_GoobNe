@@ -51,7 +51,7 @@ aside_ul_a.on({click: function () {
 $('.main-vi-wrap').slick({
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
