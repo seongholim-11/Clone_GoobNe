@@ -15,7 +15,7 @@
 h1.logo a img{width: 16rem;}
 .menu ul{margin: 0 !important;}
 .menu ul li{margin-right: 7rem;}
-.menu ul li a{display: block; font-size: 2rem; font-weight: 600;}
+.menu ul li a{display: block; font-size: 3rem; font-weight: 600;}
 
 .order{position: relative;}
 .order-ob-wrap{padding-top: 5rem; box-sizing: border-box; position: absolute; top: 0; left: -120%; display: none;}
@@ -345,7 +345,7 @@ h1.logo a img{width: 16rem;}
 @media screen and (max-width: 1349px) {
   /* header */
   h1.logo a img{width: 13rem;}
-  .menu ul li a{font-size: 2rem;}
+  .menu ul li a{font-size: 2.5rem;}
   .menu ul li{margin-right: 5rem;}
   .order-ob-wrap{left: -150%;}
 
@@ -409,7 +409,7 @@ h1.logo a img{width: 16rem;}
   h1.logo a img{width: 8rem;}
   .order-ob-wrap{top: -20%; left: -200%;}
   .menu ul li{margin-right: 4rem;}
-  .menu ul li a{font-size: 1.5rem;}
+  .menu ul li a{font-size: 2rem;}
   .more-btn img{width: 25px; height: 20px;}
 
   /* aside */
