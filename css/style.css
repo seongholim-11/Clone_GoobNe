@@ -22,24 +22,30 @@ h1.logo a img{width: 16rem;}
 .sign ul li a{display: block; font-size: 2rem; font-family: 'Rubik'; cursor: pointer;}
 
 .jbg{display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0, 0, 0, 0.4);}
-.join{display: none; width: 90rem; height: 50rem; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99999; font-family: 'Rubik';}
-.jimg{flex-basis: 40%; max-width: 360px; height: 50rem;}
-.jimg-slide{width: 100%; height: 50rem;}
-.jimg-slide img{width: 100%; height: 50rem; border-radius: 20px 0 0 20px;}
+.join{display: none; width: 100rem; height: 55rem; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99999; font-family: 'Rubik'; color: rgba(211, 0, 11); box-sizing: border-box;}
+.jimg{flex-basis: 40%; max-width: 400px; height: 55rem;}
+.jimg-slide{width: 100%; height: 55rem;}
+.jimg-slide img{width: 100%; height: 55rem; border-radius: 20px 0 0 20px;}
 .jimg .slick-dots{bottom: 5rem;}
 
-.jreg{flex-basis: 60%; padding: 3rem; box-sizing: border-box; background: rgba(211, 0, 11); border-radius: 0 20px 20px 0;}
-.jtop{margin-bottom: 1rem;}
-.jtop h2{font-size: 3rem;}
+.jreg{flex-basis: 60%; padding: 3rem; box-sizing: border-box; background: #fff; border-radius: 0 20px 20px 0;}
+.jtop{margin-bottom: 3rem;}
+.jtop h2{font-size: 3.5rem;}
 .jtop button{background: transparent; cursor: pointer;}
-.jtop button img{}
-.jleft{margin-right: 2rem;}
-.jright{margin-right: 2rem;}
-.inputArea{width: 100%;}
-.inputArea label{font-size: 1.5rem; font-weight: bold; display: block;}
-.inputArea input{width: 17rem; height: 3rem; border-radius: 10px;}
-.id-section>input
-.jbottom{}
+.jmiddle-m{display: none;}
+.jleft{width: 100%; margin-right: 2rem; position: relative;}
+.jright{width: 100%; margin-right: 2rem; position: relative;}
+.inputArea{width: 100%; margin-bottom: 0.8rem;}
+.inputArea label{font-size: 1.8rem; font-weight: bold; display: block; margin-bottom: 1rem; display: inline-block; margin-right: 1rem;}
+.inputArea span{font-size: 1.5em;}
+.inputArea input{width: 23rem; height: 2.5rem; border-radius: 10px; padding: 5px 5px 5px 10px; background: #eee; margin-bottom: 0.5rem; display: block;}
+.inputArea:last-child input{margin-bottom: 0rem;}
+.id-section input{width: 165px;}
+.id-section button{padding: 6px; border-radius: 10px; margin-left: 1px; height: 30px; cursor: pointer;}
+.jbottom{font-size: 1.8rem; font-weight: bold;}
+.jbottom div:first-child{margin-top: 0.5rem;}
+.signupbtn{margin-top: 3rem; text-align: center;}
+.signupbtn input{width: 100%; border-radius: 10px; padding: 10px 5px 13px; background: rgba(211, 0, 11); color: #fff; cursor: pointer; font-size:2rem;}
 
 .order{position: relative;}
 .order-ob-wrap{padding-top: 5rem; box-sizing: border-box; position: absolute; top: 0; left: -120%; display: none;}
@@ -445,6 +451,19 @@ h1.logo a img{width: 16rem;}
   .aside_scroll>ul>li>a{font-size: 2rem;}
   .depth>ul>li>a{font-size: 1.3rem;}
 
+  /* join */
+  .join{width: 60rem; height: 60rem; left: 45%;}
+  .jimg{display: none; flex-basis: 0%;}
+  .jreg{flex-basis: 100%; padding: 5rem; border-radius: 20px;}
+  .jleft{margin:0 2.5rem;}
+  .jright{margin:0 2.5rem;}
+
+  .inputArea input{width: 250px; height: 2.5rem; border-radius: 10px; padding: 5px 5px 5px 10px; background: #eee; margin-bottom: 0.5rem; display: block; box-sizing: border-box;}
+  .id-section input{width: 185px;}
+  .id-section button{padding: 6px; height: 25px; font-size: 1.2rem; line-height: 1px;}
+  .gnederArea{margin-left: 2.5rem;}
+  .signupbtn{margin-top: 6.5rem;}
+
   /* banner */
   .banner-img{max-width: 550px;}
   .banner-bg2 .banner-text p{font-size: 4rem;}
@@ -504,6 +523,16 @@ h1.logo a img{width: 16rem;}
   .menu{display: none;}
   .sign{display: none;}
   .more-btn{width: 30px; height: 18px;}
+
+  /* join */
+  .jmiddle-pc{display: none;}
+  .jmiddle-m{display: block;}
+  .join{width: 40rem; height: 80rem; left: 50%;}
+  .inputArea input{width: 300px; height: 3rem;}
+  .id-section input{width: 235px;}
+  .id-section button{height: 30px;}
+  .gnederArea{margin-left: 0rem; margin-top: 1rem;}
+  .signupbtn{margin-top: 3.5rem;}
 
   /* banner */
   .banner-img{max-width: 500px;}

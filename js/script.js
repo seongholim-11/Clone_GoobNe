@@ -37,43 +37,308 @@ close.on({
     }
 })
 
+function moreClose() {
+    close.trigger("click");
+}
+
 // aside ul
 let aside_ul_a = $('.depth a');
 $('.depth>ul').hide();
-aside_ul_a.on({click: function () {
+aside_ul_a.on({
+    click: function () {
         $('.depth>a').not($(this).find('a').toggleClass('active'));
         // $('.depth>ul').slideToggle();
         $('.depth>ul').not($(this).parent().find('ul').slideToggle());
     }
 })
 
-const jButton = document.querySelector('.jbutton');
+// join
+const jButton = $('.jbutton');
 const join = document.querySelector('.join');
 const jbg = document.querySelector('.jbg');
+const jclose = document.querySelector('.jclose');
 
 
 function modal() {
     jbg.style.display = 'block'
     join.style.display = 'flex'
-    join.style.position = 'fixed'
-
-    // banner
-$('.jimg').slick({
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-});
+    signUp()
 }
 
-jButton.addEventListener('click', function() {
+jButton.each(function () {
+    $(this).click(function () {
+        // 모달창 띄우기
+        modal();
+        close.trigger("click");
+    });
+})
+
+
+jclose.addEventListener('click', function () {
     // 모달창 띄우기
-    modal();
+    jbg.style.display = 'none'
+    join.style.display = 'none'
 });
 
+function signUp() {
+    let idArea = document.querySelectorAll('#idArea')
+    let idMes = document.querySelectorAll('#idMes')
+    let pwArea = document.querySelectorAll('#pwArea')
+    let pwMes = document.querySelectorAll('#pwMes')
+    let pwArea2 = document.querySelectorAll('#pwArea2')
+    let pwMes2 = document.querySelectorAll('#pwMes2')
+    let $name = document.querySelectorAll('#name')
+    let nameMes = document.querySelectorAll('#nameMes')
+    let phone = document.querySelectorAll('#phone')
+    let phMes = document.querySelectorAll('#phMes')
+    let email = document.querySelectorAll('#email')
+    let eMes = document.querySelectorAll('#eMes')
+    let born = document.querySelectorAll('#born')
+    let bMes = document.querySelectorAll('#bMes')
+    let gMes = document.querySelectorAll('#gMes')
 
+    let regid = /^[a-zA-z0-9]{4,}$/
+    let regpw = /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[!@#$%^&*()_+])/
+    let regname = /^[a-zA-Z가-힣]{2,20}$/
+    let regphone = /(^010)([0-9]{3,4})([0-9]{4})$/
+    let regemail = /^[a-zA-Z0-9]([-_.]?\w+)*@[a-zA-Z0-9]([-_.]?[a-zA-Z0-9])*\.[a-zA-Z]{2,3}$/g;
+    let regborn = /[0-9]{8}$/g
+
+
+    // ? 없거나 있거나(최대 하나)
+    // ?= 앞쪽과 일치(/ab(?=c)/)
+    // * 없거나 있거나 많거나 (여러개)
+    // + 하나 또는 많이(최소 하나)
+
+    idArea.forEach(element => {
+        element.addEventListener('blur', function () {
+            if (regid.test(element.value)) {
+                idMes.forEach(element => {
+                    element.innerHTML = "correct!"
+                    element.style.color = "green"
+                })
+            } else {
+                alert("아이디는 영대소문자, 숫자 포함 4글자 이상 가능합니다.")
+                element.innerHTML = ""
+                element.value = '';
+                element.blur();
+            }
+        })
+    });
+
+    pwArea.forEach(element => {
+        element.addEventListener('blur', function () {
+            if (regpw.test(element.value)) {
+                pwMes.forEach(element => {
+                    element.innerHTML = "correct!"
+                    element.style.color = "green"
+                })
+            } else {
+                alert("비밀번호는 특수문자, 문자 포함해서 8자 이상 16자 이하가 가능합니다")
+                element.innerHTML = ""
+                element.value = '';
+                element.blur();
+            }
+        })
+    })
+
+    pwArea2.forEach(element => {
+        element.addEventListener('blur', function () {
+            pwArea.forEach(item => {
+                if (item.value == element.value && !element.value == '') {
+                    pwMes2.forEach(element => {
+                        element.innerHTML = "correct!"
+                        element.style.color = "green"
+                    })
+                } else {
+                    if ((item.value == "") || (element.value == '')) {
+                        item.focus();
+                    } else {
+                        alert("비밀번호가 불일치합니다.")
+                        element.innerHTML = ""
+                        element.value = '';
+                        element.blur();
+                    }
+                }
+            })
+        })
+    })
+
+    $name.forEach(element => {
+        element.addEventListener('blur', function () {
+            if (regname.test(element.value)) {
+                nameMes.forEach(element => {
+                    element.innerHTML = "correct!"
+                    element.style.color = "green"
+                })
+            } else {
+                alert("이름은 한글 또는 영어로 2자 이상 20자 이하가 가능합니다.")
+                element.innerHTML = ""
+                element.value = '';
+                element.blur();
+            }
+        })
+    })
+
+    phone.forEach(element => {
+        element.addEventListener('blur', function () {
+            if (regphone.test(element.value)) {
+                phMes.forEach(element => {
+                    element.innerHTML = "correct!"
+                    element.style.color = "green"
+                })
+            } else {
+                alert("'010'으로 시작하여 '-' 구분없이 번호를 입력해주세요")
+                element.innerHTML = ""
+                element.value = '';
+                element.blur();
+            }
+        })
+    })
+
+    email.forEach(element => {
+        element.addEventListener('blur', function () {
+            if (regemail.test(element.value)) {
+                eMes.forEach(element => {
+                    element.innerHTML = "correct!"
+                    element.style.color = "green"
+                })
+            } else {
+                if (element.value == "") {
+                    eMes.innerHTML = ""
+                } else {
+                    alert("이메일 형식에 맞게 다시 입력해주세요")
+                    element.innerHTML = ""
+                    element.value = '';
+                    element.blur();
+                }
+            }
+        })
+    })
+
+    born.forEach(element => {
+        element.addEventListener('blur', function () {
+            if (regborn.test(element.value)) {
+                bMes.forEach(element => {
+                    element.innerHTML = "correct!"
+                    element.style.color = "green"
+                })
+            } else {
+                if (element.value == "") {
+                    bMes.innerHTML = ""
+                } else {
+                    alert("8자리 생년월일을 입력해주세요")
+                    element.innerHTML = ""
+                    element.value = '';
+                    element.blur();
+                }
+            }
+        })
+    })
+
+    const submit = document.querySelectorAll('#submit');
+        console.log("🚀 ~ file: script.js:240 ~ signUp ~ submit:", submit)
+        submit[0].addEventListener.click(function () {
+            if ($name[0].value == "") {
+                alert("이름을 입력해주세요")
+                return false
+            } else {
+                if (!regid.test(idArea[0].value)) {
+                    alert('아이디를 입력해주세요')
+                    idArea[0].value = "";
+                    return false
+                } else {
+                    if (pwArea[0].value == "") {
+                        alert("비밀번호를 입력해주세요")
+                        return false
+                    } else {
+                        if (pwArea[0].value != pwArea2[0].value) {
+                            alert('비밀번호가 일치하지 않습니다.')
+                            return false
+                        } else {
+                            if (idArea[0].value == "") {
+                                alert("아이디를 입력해주세요")
+                                return false
+                            } else {
+                                if (phone[0].value == "") {
+                                    alert("번호를 입력해주세요")
+                                    return false
+                                } else {
+                                    if (email[0].value == "") {
+                                        alert("이메일을 입력해주세요")
+                                        return false
+                                    } else {
+                                        if (born[0].value == "") {
+                                            alert("생년월일을 입력해주세요")
+                                            return false
+                                        } else {
+                                            if (document.querySelectorAll('[name=gender]:checked')[0] == null) {
+                                                gMes[0].style.color = 'red'
+                                                gMes[0].innerHTML = '성별을 체크해주세요'
+                                                document.querySelectorAll('.female')[0].focus();
+                                            } else {
+                                                location.href = 'index.html'
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        submit[1].addEventListener.click(function () {
+            if ($name[1].value == "") {
+                alert("이름을 입력해주세요")
+                return false
+            } else {
+                if (!regid.test(idArea[1].value)) {
+                    alert('아이디를 입력해주세요')
+                    idArea[1].value = "";
+                    return false
+                } else {
+                    if (pwArea[1].value == "") {
+                        alert("비밀번호를 입력해주세요")
+                        return false
+                    } else {
+                        if (pwArea[1].value != pwArea2[1].value) {
+                            alert('비밀번호가 일치하지 않습니다.')
+                            return false
+                        } else {
+                            if (idArea[1].value == "") {
+                                alert("아이디를 입력해주세요")
+                                return false
+                            } else {
+                                if (phone[1].value == "") {
+                                    alert("번호를 입력해주세요")
+                                    return false
+                                } else {
+                                    if (email[1].value == "") {
+                                        alert("이메일을 입력해주세요")
+                                        return false
+                                    } else {
+                                        if (born[1].value == "") {
+                                            alert("생년월일을 입력해주세요")
+                                            return false
+                                        } else {
+                                            if (document.querySelectorAll('[name=gender]:checked')[1] == null) {
+                                                gMes[1].style.color = 'red'
+                                                gMes[1].innerHTML = '성별을 체크해주세요'
+                                                document.querySelectorAll('.female')[1].focus();
+                                            } else {
+                                                location.href = 'index.html'
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+};
 
 
 
@@ -236,7 +501,7 @@ let a = 0
 
 function goobtubeButton() {
     prev.addEventListener('click', function () {
-        for ( let j = 0; j < oii.length; j++) {
+        for (let j = 0; j < oii.length; j++) {
             let classes = oii[j].classList;
             if (classes.contains('active')) {
                 a = j;
@@ -247,13 +512,13 @@ function goobtubeButton() {
             oii[i].classList.remove('active')
         }
         a--
-        if (a == -1) { a = 3}
+        if (a == -1) { a = 3 }
         oii[a].classList.add('active')
         console.log("🚀 ~ file: script.js:216 ~ a:", a)
 
     })
     next.addEventListener('click', function () {
-        for ( let j = 0; j < oii.length; j++) {
+        for (let j = 0; j < oii.length; j++) {
             let classes = oii[j].classList;
             if (classes.contains('active')) {
                 a = j;

@@ -52,589 +52,638 @@
 </head>
 
 <body>
-	<div class="jbg"></div>
-	<div class="join flex-between">
-		<div class="jimg">
-			<div class="jimg-slide">
-				<img src="./img/join/lesserafim.jpg" alt="lesserafim">
+	<div class="join-pc">
+		<div class="jbg"></div>
+		<div class="join flex-between">
+			<div class="jimg">
+				<div class="jimg-slide">
+					<img src="./img/join/lesserafim.jpg" alt="lesserafim">
+				</div>
 			</div>
-			<div class="jimg-slide">
-				<img src="./img/join/nhbasasak.jpg" alt="nhbasasak">
-			</div>
-		</div>
-		<div class="jreg">
-			<div class="jtop flex-between-center">
-				<h2>Registration</h2>
-				<button type="button"><img src="./img/join/x-symbol.png" alt="x"></button>
-			</div>
-			<div class="jmiddle flex-between">
-				<div class="jleft">
+			<div class="jreg">
+				<div class="jtop flex-between-center">
+					<h2>Registration</h2>
+					<button type="button" class="jclose"><img src="./img/join/x-symbol.png" alt="x"></button>
+				</div>
+				<div class="jmiddle jmiddle-pc flex-between">
+					<div class="jleft">
+						<div class="inputArea">
+							<label for="name">이름</label>
+							<span id="nameMes" class="message"></span>
+							<input type="text" id="name" class="line" required size="30" placeholder="이름" tabindex=1>
+						</div>
+						<div class="inputArea">
+							<label for="pwArea">비밀번호</label>
+							<span id="pwMes" class="message"></span>
+							<input type="password" id="pwArea" class="line" required size="30" placeholder="비밀번호"
+								tabindex=3>
+						</div>
+						<div class="inputArea">
+							<label for="phone">휴대전화</label>
+							<span id="phMes" class="message"></span>
+							<input type="text" id="phone" class="line" required size="30" placeholder="'-' 구분없이 입력"
+								tabindex=5>
+						</div>
+						<div class="inputArea">
+							<label for="born">생년월일</label>
+							<span id="bMes" class="message"></span>
+							<input type="text" id="born" class="line" required size="8" placeholder="생년월일" tabindex=7>
+						</div>
+					</div>
+					<div class="jright">
+						<div class="inputArea id-section">
+							<label for="idArea">아이디</label>
+							<span id="idMes" class="message"></span>
+							<div class="flex-between">
+								<input type="text" id="idArea" class="line" required size="30" placeholder="아이디"
+									value="" tabindex=2>
+								<button>중복확인</button>
+							</div>
+						</div>
+						<div class="inputArea">
+							<label for="pwArea2">비밀번호 확인</label>
+							<span id="pwMes2" class="message"></span>
+							<input type="password" id="pwArea2" class="line" required size="30" placeholder="비밀번호확인"
+								tabindex=4>
+						</div>
+						<div class="inputArea">
+							<label for="email">이메일</label>
+							<span id="eMes" class="message"></span>
+							<input type="text" id="email" class="line" required size="30" placeholder="이메일" tabindex=6>
+						</div>
+					</div>
+				</div>
+				<div class="jmiddle jmiddle-m flex-between">
 					<div class="inputArea">
 						<label for="name">이름</label>
 						<span id="nameMes" class="message"></span>
-						<input type="text" id="name" class="line" required size="30" placeholder="이름">
+						<input type="text" id="name" class="line" required size="30" placeholder="이름" tabindex=1>
+					</div>
+					<div class="inputArea id-section">
+						<label for="idArea">아이디</label>
+						<span id="idMes" class="message"></span>
+						<div class="flex-between">
+							<input type="text" id="idArea" class="line" required size="30" placeholder="아이디" value=""
+								tabindex=2>
+							<button>중복확인</button>
+						</div>
 					</div>
 					<div class="inputArea">
 						<label for="pwArea">비밀번호</label>
 						<span id="pwMes" class="message"></span>
-						<input type="password" id="pwArea" class="line" required size="30" placeholder="비밀번호">
+						<input type="password" id="pwArea" class="line" required size="30" placeholder="비밀번호"
+							tabindex=3>
+					</div>
+					<div class="inputArea">
+						<label for="pwArea2">비밀번호 확인</label>
+						<span id="pwMes2" class="message"></span>
+						<input type="password" id="pwArea2" class="line" required size="30" placeholder="비밀번호확인"
+							tabindex=4>
 					</div>
 					<div class="inputArea">
 						<label for="phone">휴대전화</label>
 						<span id="phMes" class="message"></span>
-						<input type="text" id="phone" class="line" required size="30" placeholder="'-' 구분없이 입력">
-					</div>
-					<div class="inputArea">
-						<label for="born">생년월일</label>
-						<span id="bMes" class="message"></span>
-						<input type="text" id="born" class="line" required size="8" placeholder="생년월일">
-					</div>
-				</div>
-				<div class="jright">
-					<div class="inputArea id-section">
-						<label for="idArea">아이디</label>
-						<span id="idMes" class="message"></span>
-						<input type="text" id="idArea" class="line" required size="30" placeholder="아이디" value="">
-						<button>중복확인</button>
-					</div>
-					<div class="inputArea">
-						<label for="pwArea2">비밀번호확인</label>
-						<span id="pwMes2" class="message"></span>
-						<input type="password" id="pwArea2" class="line" required size="30" placeholder="비밀번호확인">
+						<input type="text" id="phone" class="line" required size="30" placeholder="'-' 구분없이 입력"
+							tabindex=5>
 					</div>
 					<div class="inputArea">
 						<label for="email">이메일</label>
 						<span id="eMes" class="message"></span>
-						<input type="text" id="email" class="line" required size="30" placeholder="이메일">
+						<input type="text" id="email" class="line" required size="30" placeholder="이메일" tabindex=6>
+					</div>
+					<div class="inputArea">
+						<label for="born">생년월일</label>
+						<span id="bMes" class="message"></span>
+						<input type="text" id="born" class="line" required size="8" placeholder="생년월일" tabindex=7>
 					</div>
 				</div>
-			</div>
-			<div class="jbottom">
-				<div>
-					<span class="gnederArea">성별</span>
-					<input type="radio" name="gender" id="female">
-					<label for="female" class="gender female">여성</label>
-					<input type="radio" name="gender" id="male">
-					<label for="male" class="gender male">남성</label>
-					<span id="gMes" class="gendermessage"></span>
-				</div>
-				<div>
-					<input type="button" value="회원가입" class="btn" id="submit">
+					<div class="jbottom">
+						<div>
+							<span class="gnederArea">성별</span>
+							<input type="radio" name="gender" id="female">
+							<label for="female" class="gender female">여성</label>
+							<input type="radio" name="gender" id="male">
+							<label for="male" class="gender male">남성</label>
+							<span id="gMes" class="gendermessage"></span>
+						</div>
+						<div class="signupbtn">
+							<input type="button" value="회원가입" class="btn" id="submit">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="wrap">
-		<div id="header">
-			<div class="inner">
-				<div class="header flex-between-center">
-					<h1 class="logo">
-						<a href="index.html" class="db">
-							<img src="./img/header/logo.svg" alt="logo">
-						</a>
-					</h1>
-					<div class="menu">
-						<ul class="flex-between">
-							<li class="order"><a href="#">주문하기</a>
-								<div class="order-ob-wrap">
-									<div class="order-ob">
-										<button type="button"><img src="./img/header/order_ob01.svg"
-												alt="order_ob01"><span>메뉴보기</span></button>
-										<button type="button"><img src="./img/header/order_ob02.svg"
-												alt="order_ob02"><span>매장선택</span></button>
-									</div>
-								</div>
-							</li>
-							<li><a href="#">메뉴소개</a></li>
-							<li><a href="#">매장찾기</a></li>
-							<li><a href="#">창업안내</a></li>
-							<li><a href="#">이벤트</a></li>
-						</ul>
-					</div>
-					<div class="more-btn flex-between-center">
-						<div class="sign">
+		<div id="wrap">
+			<div id="header">
+				<div class="inner">
+					<div class="header flex-between-center">
+						<h1 class="logo">
+							<a href="index.html" class="db">
+								<img src="./img/header/logo.svg" alt="logo">
+							</a>
+						</h1>
+						<div class="menu">
 							<ul class="flex-between">
-								<li><a href="#">Login</a></li>
-								<li><a href="#" class="jbutton">Join</a></li>
+								<li class="order"><a href="#">주문하기</a>
+									<div class="order-ob-wrap">
+										<div class="order-ob">
+											<button type="button"><img src="./img/header/order_ob01.svg"
+													alt="order_ob01"><span>메뉴보기</span></button>
+											<button type="button"><img src="./img/header/order_ob02.svg"
+													alt="order_ob02"><span>매장선택</span></button>
+										</div>
+									</div>
+								</li>
+								<li><a href="#">메뉴소개</a></li>
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">창업안내</a></li>
+								<li><a href="#">이벤트</a></li>
 							</ul>
 						</div>
-
-						<a href="#" class="more-btn-wrap db">
-							<span class="bar bar1"></span>
-							<span class="bar bar2"></span>
-							<span class="bar bar3"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<aside class="aside">
-			<div class="aside-bg"></div>
-			<div class="aside-lnb">
-				<div class="aside-inner">
-					<button type="button" class="aside-close"></button>
-					<div class="aside-login">
-						<a href="#">Login</a>
-						<span class="login-bar"></span>
-						<a href="#">Join</a>
-					</div>
-					<a href="#" class="lesserafim_banner"><img src="./img/more_menu/banner_lesserafim.jpg"
-							alt="lesserafim"></a>
-					<div class="aside_scroll">
-						<ul>
-							<li class="depth"><a href="#">브랜드</a>
-								<ul>
-									<li><a href="#">브랜드스토리</a></li>
-									<li><a href="#">경영철학</a></li>
-									<li><a href="#">인재채용</a></li>
+						<div class="more-btn flex-between-center">
+							<div class="sign">
+								<ul class="flex-between">
+									<li><a href="#">Login</a></li>
+									<li><a href="#" class="jbutton">Join</a></li>
 								</ul>
-							</li>
-							<li class="depth"><a href="#">주문하기</a>
-								<ul>
-									<li><a href="#">메뉴보기</a></li>
-									<li><a href="#">매장선택</a></li>
-								</ul>
-							</li>
-							<li><a href="#">e-쿠폰</a></li>
-							<li class="depth"><a href="#">신제품</a>
-								<ul>
-									<li><a href="#">포토제닉 테이스트 피자</a></li>
-									<li><a href="#">최고의 고추.마늘 모았다!</a></li>
-									<li><a href="#">맵달떡볶이</a></li>
-									<li><a href="#">남해마늘 바사삭</a></li>
-								</ul>
-							</li>
-							<li class="depth"><a href="#">메뉴소개</a>
-								<ul>
-									<li><a href="#">전체</a></li>
-									<li><a href="#">치킨</a></li>
-									<li><a href="#">피자</a></li>
-									<li><a href="#">사이드</a></li>
-									<li><a href="#">세트</a></li>
-								</ul>
-							</li>
-							<li><a href="#">매장찾기</a></li>
-							<li><a href="#">이벤트</a></li>
-							<li><a href="#">글로벌</a></li>
-							<li class="depth"><a href="#">창업안내</a>
-								<ul>
-									<li><a href="#">프랜차이즈굽네</a></li>
-									<li><a href="#">창업프로세스 및 예상비용</a></li>
-									<li><a href="#">온라인 창업상담</a></li>
-								</ul>
-							</li>
-							<li><a href="#">굽뉴스</a></li>
-							<li><a href="#">굽민의소리</a></li>
-						</ul>
-						<dl class="aside-num">
-							<dt>주문전화</dt>
-							<dd>1661-9494</dd>
-						</dl>
-					</div>
-				</div>
-			</div>
-		</aside>
-		<div id="content">
-			<div class="main-slick-wrap">
-				<div class="main-vi-wrap">
-					<div class="banner-bg banner-bg0">
-						<img class="banner-bg-img" src="./img/banner/cha2/pc.jpeg" alt="bage">
-						<div class="banner-img">
-							<a href="#">
-								<img src="./img/banner/cha2/pc.png" alt="pc">
-							</a>
-						</div>
-					</div>
-					<div class="banner-bg banner-bg1">
-						<img class="banner-bg-img" src="./img/banner/cha/bage.jpeg" alt="bage">
-						<div class="banner-img">
-							<a href="#">
-								<img src="./img/banner/cha/pc.png" alt="pc">
-							</a>
-						</div>
-					</div>
-					<div class="banner-bg banner-bg2">
-						<div class="banner-bg2-wrap">
-							<div class="banner-text">
-								<p class="first">welcome</p>
-								<br>
-								<p class="mid">to the</p>
-								<br>
-								<p class="last">
-									Oven
-									<span>Universe</span>
-								</p>
 							</div>
-							<div class="banner-img2">
+
+							<a href="#" class="more-btn-wrap db">
+								<span class="bar bar1"></span>
+								<span class="bar bar2"></span>
+								<span class="bar bar3"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<aside class="aside">
+				<div class="aside-bg"></div>
+				<div class="aside-lnb">
+					<div class="aside-inner">
+						<button type="button" class="aside-close"></button>
+						<div class="aside-login">
+							<a href="#">Login</a>
+							<span class="login-bar"></span>
+							<a href="#" class="jbutton">Join</a>
+						</div>
+						<a href="#" class="lesserafim_banner"><img src="./img/more_menu/banner_lesserafim.jpg"
+								alt="lesserafim"></a>
+						<div class="aside_scroll">
+							<ul>
+								<li class="depth"><a href="#">브랜드</a>
+									<ul>
+										<li><a href="#">브랜드스토리</a></li>
+										<li><a href="#">경영철학</a></li>
+										<li><a href="#">인재채용</a></li>
+									</ul>
+								</li>
+								<li class="depth"><a href="#">주문하기</a>
+									<ul>
+										<li><a href="#">메뉴보기</a></li>
+										<li><a href="#">매장선택</a></li>
+									</ul>
+								</li>
+								<li><a href="#">e-쿠폰</a></li>
+								<li class="depth"><a href="#">신제품</a>
+									<ul>
+										<li><a href="#">포토제닉 테이스트 피자</a></li>
+										<li><a href="#">최고의 고추.마늘 모았다!</a></li>
+										<li><a href="#">맵달떡볶이</a></li>
+										<li><a href="#">남해마늘 바사삭</a></li>
+									</ul>
+								</li>
+								<li class="depth"><a href="#">메뉴소개</a>
+									<ul>
+										<li><a href="#">전체</a></li>
+										<li><a href="#">치킨</a></li>
+										<li><a href="#">피자</a></li>
+										<li><a href="#">사이드</a></li>
+										<li><a href="#">세트</a></li>
+									</ul>
+								</li>
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">글로벌</a></li>
+								<li class="depth"><a href="#">창업안내</a>
+									<ul>
+										<li><a href="#">프랜차이즈굽네</a></li>
+										<li><a href="#">창업프로세스 및 예상비용</a></li>
+										<li><a href="#">온라인 창업상담</a></li>
+									</ul>
+								</li>
+								<li><a href="#">굽뉴스</a></li>
+								<li><a href="#">굽민의소리</a></li>
+							</ul>
+							<dl class="aside-num">
+								<dt>주문전화</dt>
+								<dd>1661-9494</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div id="content">
+				<div class="main-slick-wrap">
+					<div class="main-vi-wrap">
+						<div class="banner-bg banner-bg0">
+							<img class="banner-bg-img" src="./img/banner/cha2/pc.jpeg" alt="bage">
+							<div class="banner-img">
 								<a href="#">
-									<img src="./img/banner/chi/goobne_bg_2.png" alt="goobne_bg_2">
-									<button class="goobne-btn btn1">
-										<span><em>NEW</em><br />✨최강의<br>바사삭 등장</span>
-									</button>
-									<button class="goobne-btn btn2"></button>
-									<button class="goobne-menu-btn btn1">Oven</button>
-									<button class="goobne-menu-btn btn2">Basasak</button>
+									<img src="./img/banner/cha2/pc.png" alt="pc">
 								</a>
 							</div>
 						</div>
-					</div>
-					<div class="banner-bg banner-bg3">
-						<img class="banner-bg-img" src="./img/banner/dduk/ddeok.jpeg" alt="ddeok">
-						<div class="banner-img">
-							<a href="#">
-								<img src="./img/banner/dduk/pc.png" alt="pc">
-							</a>
+						<div class="banner-bg banner-bg1">
+							<img class="banner-bg-img" src="./img/banner/cha/bage.jpeg" alt="bage">
+							<div class="banner-img">
+								<a href="#">
+									<img src="./img/banner/cha/pc.png" alt="pc">
+								</a>
+							</div>
 						</div>
-					</div>
-					<div class="banner-bg banner-bg4">
-						<img class="banner-bg-img" src="./img/banner/lesser/lesserafim.jpeg" alt="lesserafim">
-						<div class="banner-img">
-							<a href="#">
-								<img src="./img/banner/lesser/pc.png" alt="pc">
-							</a>
-						</div>
-					</div>
-					<div class="banner-bg banner-bg5">
-						<img class="banner-bg-img" src="./img/banner/ocean/cha_back.jpeg" alt="cha_back">
-						<div class="banner-img">
-							<a href="#">
-								<img src="./img/banner/ocean/pc.png" alt="pc">
-							</a>
-						</div>
-					</div>
-					<div class="banner-bg banner-bg6">
-						<img class="banner-bg-img" src="./img/banner/pizza/pc_bg.jpg" alt="back">
-						<div class="banner-img">
-							<a href="#">
-								<img src="./img/banner/pizza/6cab1e54c09e413c966814cb348ba5f0.png" alt="pc">
-							</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			<div class="con-box goobnews">
-				<div class="goobnews-pc flex">
-					<div class="news-img-wrap">
-						<div class="news-around-wrap">
-							<h2>GoobNe</h2>
-							<div class="news-around">
-								<div class="news-img">
-									<img src="./img/goobnews/p_1.png" alt="">
+						<div class="banner-bg banner-bg2">
+							<div class="banner-bg2-wrap">
+								<div class="banner-text">
+									<p class="first">welcome</p>
+									<br>
+									<p class="mid">to the</p>
+									<br>
+									<p class="last">
+										Oven
+										<span>Universe</span>
+									</p>
 								</div>
-								<div class="news-around-text-wrap">
-									<div class="news-around-text flex-center">
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+								<div class="banner-img2">
+									<a href="#">
+										<img src="./img/banner/chi/goobne_bg_2.png" alt="goobne_bg_2">
+										<button class="goobne-btn btn1">
+											<span><em>NEW</em><br />✨최강의<br>바사삭 등장</span>
+										</button>
+										<button class="goobne-btn btn2"></button>
+										<button class="goobne-menu-btn btn1">Oven</button>
+										<button class="goobne-menu-btn btn2">Basasak</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="banner-bg banner-bg3">
+							<img class="banner-bg-img" src="./img/banner/dduk/ddeok.jpeg" alt="ddeok">
+							<div class="banner-img">
+								<a href="#">
+									<img src="./img/banner/dduk/pc.png" alt="pc">
+								</a>
+							</div>
+						</div>
+						<div class="banner-bg banner-bg4">
+							<img class="banner-bg-img" src="./img/banner/lesser/lesserafim.jpeg" alt="lesserafim">
+							<div class="banner-img">
+								<a href="#">
+									<img src="./img/banner/lesser/pc.png" alt="pc">
+								</a>
+							</div>
+						</div>
+						<div class="banner-bg banner-bg5">
+							<img class="banner-bg-img" src="./img/banner/ocean/cha_back.jpeg" alt="cha_back">
+							<div class="banner-img">
+								<a href="#">
+									<img src="./img/banner/ocean/pc.png" alt="pc">
+								</a>
+							</div>
+						</div>
+						<div class="banner-bg banner-bg6">
+							<img class="banner-bg-img" src="./img/banner/pizza/pc_bg.jpg" alt="back">
+							<div class="banner-img">
+								<a href="#">
+									<img src="./img/banner/pizza/6cab1e54c09e413c966814cb348ba5f0.png" alt="pc">
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="con-box goobnews">
+					<div class="goobnews-pc flex">
+						<div class="news-img-wrap">
+							<div class="news-around-wrap">
+								<h2>GoobNe</h2>
+								<div class="news-around">
+									<div class="news-img">
+										<img src="./img/goobnews/p_1.png" alt="">
 									</div>
-									<div class="news-around-text flex-center">
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
-									</div>
-									<div class="news-around-text flex-center">
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
-									</div>
-									<div class="news-around-text flex-center">
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
-										<span
-											class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+									<div class="news-around-text-wrap">
+										<div class="news-around-text flex-center">
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+										</div>
+										<div class="news-around-text flex-center">
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+										</div>
+										<div class="news-around-text flex-center">
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+										</div>
+										<div class="news-around-text flex-center">
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+											<span
+												class="text-goobne">GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;GoobNe&nbsp;</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="news-text-wrap flex-center">
+							<div class="news-text news-title flex-center">
+								<h3>GoobNews</h3>
+							</div>
+							<div class="news-text news-content flex-center active">
+								<p>굽네, 포토제닉 테이스트 ‘르세라핌 인 시카고’ 광고 공개</p>
+							</div>
+							<div class="news-text news-content flex-center">
+								<p>[브랜드] 굽네, 모델로 르세라핌 발탁…신제품 티저 광고 공개</p>
+							</div>
+							<div class="news-text news-content flex-center">
+								<p>[브랜드] 굽네, 대한적십자사와 MOU 체결… 생명나눔 캠페인 앞장</p>
+							</div>
+							<div class="news-text news-content flex-center">
+								<p>[신제품] 굽네, 오리지널∙고추바사삭 ‘곱빼기’ 출시… ’먹그레이드’ 트렌드 겨냥</p>
+							</div>
+						</div>
 					</div>
-					<div class="news-text-wrap flex-center">
-						<div class="news-text news-title flex-center">
-							<h3>GoobNews</h3>
-						</div>
-						<div class="news-text news-content flex-center active">
-							<p>굽네, 포토제닉 테이스트 ‘르세라핌 인 시카고’ 광고 공개</p>
-						</div>
-						<div class="news-text news-content flex-center">
-							<p>[브랜드] 굽네, 모델로 르세라핌 발탁…신제품 티저 광고 공개</p>
-						</div>
-						<div class="news-text news-content flex-center">
-							<p>[브랜드] 굽네, 대한적십자사와 MOU 체결… 생명나눔 캠페인 앞장</p>
-						</div>
-						<div class="news-text news-content flex-center">
-							<p>[신제품] 굽네, 오리지널∙고추바사삭 ‘곱빼기’ 출시… ’먹그레이드’ 트렌드 겨냥</p>
+					<div class="goobnews-m">
+						<div class="inner">
+							<h3>Goobnews</h2>
+								<ul>
+									<li>
+										<div class="mgoobnews-img">
+											<img src="./img/goobnews/m_1.png" alt="m_1">
+										</div>
+										<div class="mgoobnews-text">
+											<h4>[브랜드]</h4>
+											<p>굽네, 포토제닉 테이스트 ‘르세라핌 인 시카고’ 광고 공개</p>
+										</div>
+									</li>
+									<li>
+										<div class="mgoobnews-img">
+											<img src="./img/goobnews/m_2.png" alt="m_2">
+										</div>
+										<div class="mgoobnews-text">
+											<h4>[브랜드]</h4>
+											<p>굽네, 모델로 르세라핌 발탁…신제품 티저 광고 공개</p>
+										</div>
+									</li>
+									<li>
+										<div class="mgoobnews-img">
+											<img src="./img/goobnews/m_3.jpg" alt="m_3">
+										</div>
+										<div class="mgoobnews-text">
+											<h4>[브랜드]</h4>
+											<p>굽네, 대한적십자사와 MOU 체결… 생명나눔 캠페인 앞장</p>
+										</div>
+									</li>
+									<li>
+										<div class="mgoobnews-img">
+											<img src="./img/goobnews/m_4.png" alt="m_4">
+										</div>
+										<div class="mgoobnews-text">
+											<h4>[신제품]</h4>
+											<p>굽네, 오리지널∙고추바사삭 ‘곱빼기’ 출시… ’먹그레이드’ 트렌드 겨냥</p>
+										</div>
+									</li>
+								</ul>
 						</div>
 					</div>
 				</div>
-				<div class="goobnews-m">
-					<div class="inner">
-						<h3>Goobnews</h2>
+				<div class="con-box oven-menu flex-between">
+					<div class="text-wrap flex-center">
+						<div class="text-wrap-1 flex">
+							<span class="first">GoobNe</span>
+							<span class="second">Chicken</span>
+							<span class="third">Oven Menu</span>
+						</div>
+					</div>
+					<div class="img-wrap">
+						<div class="img-wrap-1">
+							<div class="img-wrap-1-1">
+								<div class="food chicken"></div>
+								<div class="food dessert"></div>
+							</div>
+							<div class="img-wrap-1-2">
+								<div class="food pizza"></div>
+								<div class="food best_set"></div>
+							</div>
+						</div>
+					</div>
+					<div class="oven-mobile">
+						<h2>Oven Menu</h2>
+						<div class="oven-slide-wrap">
+							<div class="oven-slide">
+								<div class="mfood mchicken">
+									<a href="#"><img src="./img/oven_menu/1.jpg" alt="chicken"></a>
+								</div>
+								<div class="mfood mpizza">
+									<a href="#"><img src="./img/oven_menu/2.jpg" alt="pizza"></a>
+								</div>
+								<div class="mfood mdessert">
+									<a href="#"><img src="./img/oven_menu/3.jpg" alt="dessert"></a>
+								</div>
+								<div class="mfood mbest_set">
+									<a href="#"><img src="./img/oven_menu/4.jpg" alt="best_set"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="con-box goobster ">
+					<div class="goobster-wrap flex">
+						<div class="goobster-bg3 goobster-beige"></div>
+						<div class="goobster-bg7 flex-center">
+							<h2><img src="./img/goobster/title-instar.svg" alt="insta"> Goobsters</h2>
+						</div>
+					</div>
+					<div class="goobster-wrap flex">
+						<div class="goobster-bg5 goobster-beige"></div>
+						<div class="goobster-bg5"></div>
+					</div>
+					<div class="goobster-wrap flex">
+						<div class="goobster-bg7 goobster-beige"></div>
+						<div class="goobster-bg3"></div>
+					</div>
+					<div class="goobster-img">
+						<ul class="flex">
+							<li>
+								<a href="#">
+									<img src="./img/goobster/1.png" alt="1">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/goobster/2.png" alt="2">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/goobster/3.png" alt="3">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/goobster/4.png" alt="4">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/goobster/5.jpg" alt="5">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/goobster/6.png" alt="6">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./img/goobster/7.png" alt="7">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="con-box goobtube">
+					<h2>Goobtube</h2>
+					<div class="nfmc flex">
+						<ul class="flex">
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+							<li class="flex-center">💥 NO FRY MORE CRISPY</li>
+						</ul>
+					</div>
+					<div class="out-in-img inner">
+						<div class="oii active">
+							<div class="oii-img">
+								<img src="./img/goobtube/1.png" alt="1">
+							</div>
+							<div class="oii-text">
+								<h3>굽네ㅣ르세라핌<br>LE SSERAFIM in CHICAGO🍕</h3>
+								<p>넋놓고 바라보게 돼서<br>
+									최소 6번은 돌려봐야 예의인<br>
+									르세라핌 in 시카고 풀버전🤍</p>
+								<a href="#">영상 보러가기</a>
+							</div>
+						</div>
+						<div class="oii">
+							<div class="oii-img">
+								<img src="./img/goobtube/2.jpg" alt="2">
+							</div>
+							<div class="oii-text">
+								<h3>[굽네 남해마늘 바사삭]<br>이번 전투에서 우린 다 져야만 한다!<br> 다지고 구워서 마늘정복!</h3>
+								<p>치킨 역사에 기록될 위대한 전쟁,<br>
+									이 전쟁의 승리는 바로 나 구울레옹의 것!</p>
+								<a href="#">영상 보러가기</a>
+							</div>
+						</div>
+						<div class="oii">
+							<div class="oii-img">
+								<img src="./img/goobtube/3.jpg" alt="3">
+							</div>
+							<div class="oii-text">
+								<h3>No Fry, More Crispy!<br>굽네 바사삭 유니버스가 열린다!</h3>
+								<p>구울레옹의 명을 받아 바삭함을 <br>찾으러 떠난 바사삭 원정대,<br>
+									콜럼바삭, 치즈바라, 바삭트라!<br></p>
+								<a href="#">영상 보러가기</a>
+							</div>
+						</div>
+						<div class="oii">
+							<div class="oii-img">
+								<img src="./img/goobtube/4.jpg" alt="4">
+							</div>
+							<div class="oii-text">
+								<h3>[굽네 불금치킨] 구울레옹,<br>구워서 불맛 정복!<br>내 오븐에 불가능은 없다!</h3>
+								<p>나는 구울레옹... 내 역사는<br> 튀길레옹과의 전투의 역사였다...⚔<br>
+									굽네 🔥불금🥇치킨!</p>
+								<a href="#">영상 보러가기</a>
+							</div>
+						</div>
+						<div class="prev_arrow"></div>
+						<div class="next_arrow"></div>
+					</div>
+				</div>
+			</div>
+			<div id="footer" class="footer">
+				<div class="inner">
+					<div class="footer-up flex-between">
+						<div class="fnumber">
 							<ul>
 								<li>
-									<div class="mgoobnews-img">
-										<img src="./img/goobnews/m_1.png" alt="m_1">
-									</div>
-									<div class="mgoobnews-text">
-										<h4>[브랜드]</h4>
-										<p>굽네, 포토제닉 테이스트 ‘르세라핌 인 시카고’ 광고 공개</p>
-									</div>
+									<p class="sub-text">전화주문</p>
+									<p class="tel">1661-9494</p>
 								</li>
 								<li>
-									<div class="mgoobnews-img">
-										<img src="./img/goobnews/m_2.png" alt="m_2">
-									</div>
-									<div class="mgoobnews-text">
-										<h4>[브랜드]</h4>
-										<p>굽네, 모델로 르세라핌 발탁…신제품 티저 광고 공개</p>
-									</div>
-								</li>
-								<li>
-									<div class="mgoobnews-img">
-										<img src="./img/goobnews/m_3.jpg" alt="m_3">
-									</div>
-									<div class="mgoobnews-text">
-										<h4>[브랜드]</h4>
-										<p>굽네, 대한적십자사와 MOU 체결… 생명나눔 캠페인 앞장</p>
-									</div>
-								</li>
-								<li>
-									<div class="mgoobnews-img">
-										<img src="./img/goobnews/m_4.png" alt="m_4">
-									</div>
-									<div class="mgoobnews-text">
-										<h4>[신제품]</h4>
-										<p>굽네, 오리지널∙고추바사삭 ‘곱빼기’ 출시… ’먹그레이드’ 트렌드 겨냥</p>
-									</div>
+									<p class="sub-text">창업문의</p>
+									<p class="tel">1899-9458</p>
 								</li>
 							</ul>
-					</div>
-				</div>
-			</div>
-			<div class="con-box oven-menu flex-between">
-				<div class="text-wrap flex-center">
-					<div class="text-wrap-1 flex">
-						<span class="first">GoobNe</span>
-						<span class="second">Chicken</span>
-						<span class="third">Oven Menu</span>
-					</div>
-				</div>
-				<div class="img-wrap">
-					<div class="img-wrap-1">
-						<div class="img-wrap-1-1">
-							<div class="food chicken"></div>
-							<div class="food dessert"></div>
 						</div>
-						<div class="img-wrap-1-2">
-							<div class="food pizza"></div>
-							<div class="food best_set"></div>
+						<div class="ftext">
+							<ul class="flex-between">
+								<li><a href="#">이용약관</a></li>
+								<li><a href="#">개인정보처리방침</a></li>
+								<li><a href="#">이메일무단수집거부</a></li>
+								<li><a href="#">찾아오시는길</a></li>
+							</ul>
+						</div>
+						<div class="ficon">
+							<ul class="flex-between">
+								<li><a href="#"><img src="./img/footer/instargram_icon.svg" alt="insta"></a></li>
+								<li><a href="#"><img src="./img/footer/facebook_icon.svg" alt="face"></a></li>
+								<li><a href="#"><img src="./img/footer/blog_icon.svg" alt="blog"></a></li>
+								<li><a href="#"><img src="./img/footer/youtube_icon.svg" alt="you"></a></li>
+							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="oven-mobile">
-					<h2>Oven Menu</h2>
-					<div class="oven-slide-wrap">
-						<div class="oven-slide">
-							<div class="mfood mchicken">
-								<a href="#"><img src="./img/oven_menu/1.jpg" alt="chicken"></a>
-							</div>
-							<div class="mfood mpizza">
-								<a href="#"><img src="./img/oven_menu/2.jpg" alt="pizza"></a>
-							</div>
-							<div class="mfood mdessert">
-								<a href="#"><img src="./img/oven_menu/3.jpg" alt="dessert"></a>
-							</div>
-							<div class="mfood mbest_set">
-								<a href="#"><img src="./img/oven_menu/4.jpg" alt="best_set"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="con-box goobster ">
-				<div class="goobster-wrap flex">
-					<div class="goobster-bg3 goobster-beige"></div>
-					<div class="goobster-bg7 flex-center">
-						<h2><img src="./img/goobster/title-instar.svg" alt="insta"> Goobsters</h2>
-					</div>
-				</div>
-				<div class="goobster-wrap flex">
-					<div class="goobster-bg5 goobster-beige"></div>
-					<div class="goobster-bg5"></div>
-				</div>
-				<div class="goobster-wrap flex">
-					<div class="goobster-bg7 goobster-beige"></div>
-					<div class="goobster-bg3"></div>
-				</div>
-				<div class="goobster-img">
-					<ul class="flex">
-						<li>
-							<a href="#">
-								<img src="./img/goobster/1.png" alt="1">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./img/goobster/2.png" alt="2">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./img/goobster/3.png" alt="3">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./img/goobster/4.png" alt="4">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./img/goobster/5.jpg" alt="5">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./img/goobster/6.png" alt="6">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./img/goobster/7.png" alt="7">
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="con-box goobtube">
-				<h2>Goobtube</h2>
-				<div class="nfmc flex">
-					<ul class="flex">
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-						<li class="flex-center">💥 NO FRY MORE CRISPY</li>
-					</ul>
-				</div>
-				<div class="out-in-img inner">
-					<div class="oii active">
-						<div class="oii-img">
-							<img src="./img/goobtube/1.png" alt="1">
-						</div>
-						<div class="oii-text">
-							<h3>굽네ㅣ르세라핌<br>LE SSERAFIM in CHICAGO🍕</h3>
-							<p>넋놓고 바라보게 돼서<br>
-								최소 6번은 돌려봐야 예의인<br>
-								르세라핌 in 시카고 풀버전🤍</p>
-							<a href="#">영상 보러가기</a>
-						</div>
-					</div>
-					<div class="oii">
-						<div class="oii-img">
-							<img src="./img/goobtube/2.jpg" alt="2">
-						</div>
-						<div class="oii-text">
-							<h3>[굽네 남해마늘 바사삭]<br>이번 전투에서 우린 다 져야만 한다!<br> 다지고 구워서 마늘정복!</h3>
-							<p>치킨 역사에 기록될 위대한 전쟁,<br>
-								이 전쟁의 승리는 바로 나 구울레옹의 것!</p>
-							<a href="#">영상 보러가기</a>
-						</div>
-					</div>
-					<div class="oii">
-						<div class="oii-img">
-							<img src="./img/goobtube/3.jpg" alt="3">
-						</div>
-						<div class="oii-text">
-							<h3>No Fry, More Crispy!<br>굽네 바사삭 유니버스가 열린다!</h3>
-							<p>구울레옹의 명을 받아 바삭함을 <br>찾으러 떠난 바사삭 원정대,<br>
-								콜럼바삭, 치즈바라, 바삭트라!<br></p>
-							<a href="#">영상 보러가기</a>
-						</div>
-					</div>
-					<div class="oii">
-						<div class="oii-img">
-							<img src="./img/goobtube/4.jpg" alt="4">
-						</div>
-						<div class="oii-text">
-							<h3>[굽네 불금치킨] 구울레옹,<br>구워서 불맛 정복!<br>내 오븐에 불가능은 없다!</h3>
-							<p>나는 구울레옹... 내 역사는<br> 튀길레옹과의 전투의 역사였다...⚔<br>
-								굽네 🔥불금🥇치킨!</p>
-							<a href="#">영상 보러가기</a>
-						</div>
-					</div>
-					<div class="prev_arrow"></div>
-					<div class="next_arrow"></div>
-				</div>
-			</div>
-		</div>
-		<div id="footer" class="footer">
-			<div class="inner">
-				<div class="footer-up flex-between">
-					<div class="fnumber">
+					<div class="footer-down">
 						<ul>
+							<li>주식회사 지앤푸드 대표자 : 정태용</li>
 							<li>
-								<p class="sub-text">전화주문</p>
-								<p class="tel">1661-9494</p>
+								<address>주소 서울특별시 강서구 강서로 318 (내발산동 677) 지앤빌딩</address>
+							</li>
+							<li>사업자등록번호 137-81-80324</li>
+							<li>통신판매업신고번호 제 2014-서울양천-0426호</li>
+							<li>
+								<address>TEL 02-2648-2005</address>
 							</li>
 							<li>
-								<p class="sub-text">창업문의</p>
-								<p class="tel">1899-9458</p>
+								<address>FAX 02-2648-9458</address>
 							</li>
+							<li>광고 제휴 문의 mkt@gngrp.com</li>
 						</ul>
+						<p>© 2009-2016 GOOBNE.CO.ALL RIGHT RESERVED</p>
 					</div>
-					<div class="ftext">
-						<ul class="flex-between">
-							<li><a href="#">이용약관</a></li>
-							<li><a href="#">개인정보처리방침</a></li>
-							<li><a href="#">이메일무단수집거부</a></li>
-							<li><a href="#">찾아오시는길</a></li>
-						</ul>
-					</div>
-					<div class="ficon">
-						<ul class="flex-between">
-							<li><a href="#"><img src="./img/footer/instargram_icon.svg" alt="insta"></a></li>
-							<li><a href="#"><img src="./img/footer/facebook_icon.svg" alt="face"></a></li>
-							<li><a href="#"><img src="./img/footer/blog_icon.svg" alt="blog"></a></li>
-							<li><a href="#"><img src="./img/footer/youtube_icon.svg" alt="you"></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-down">
-					<ul>
-						<li>주식회사 지앤푸드 대표자 : 정태용</li>
-						<li>
-							<address>주소 서울특별시 강서구 강서로 318 (내발산동 677) 지앤빌딩</address>
-						</li>
-						<li>사업자등록번호 137-81-80324</li>
-						<li>통신판매업신고번호 제 2014-서울양천-0426호</li>
-						<li>
-							<address>TEL 02-2648-2005</address>
-						</li>
-						<li>
-							<address>FAX 02-2648-9458</address>
-						</li>
-						<li>광고 제휴 문의 mkt@gngrp.com</li>
-					</ul>
-					<p>© 2009-2016 GOOBNE.CO.ALL RIGHT RESERVED</p>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 </body>
 
