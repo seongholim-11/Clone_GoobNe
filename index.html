@@ -52,6 +52,76 @@
 </head>
 
 <body>
+	<div class="jbg"></div>
+	<div class="join flex-between">
+		<div class="jimg">
+			<div class="jimg-slide">
+				<img src="./img/join/lesserafim.jpg" alt="lesserafim">
+			</div>
+			<div class="jimg-slide">
+				<img src="./img/join/nhbasasak.jpg" alt="nhbasasak">
+			</div>
+		</div>
+		<div class="jreg">
+			<div class="jtop flex-between-center">
+				<h2>회원가입</h2>
+				<button type="button"><img src="./img/join/x-symbol.png" alt="x"></button>
+			</div>
+			<div class="jleft">
+				<div class="inputArea">
+					<label for="name">이름</label>
+					<span id="nameMes" class="message"></span>
+					<input type="text" id="name" class="line" required size="30" placeholder="이름">
+				</div>
+				<div>
+					<label for="pwArea">비밀번호</label>
+					<span id="pwMes" class="message"></span>
+					<input type="password" id="pwArea" class="line" required size="30" placeholder="비밀번호">
+				</div>
+				<div>
+					<label for="phone">휴대전화</label>
+					<span id="phMes" class="message"></span>
+					<input type="text" id="phone" class="line" required size="30" placeholder="'-' 구분없이 입력">
+				</div>
+				<div>
+					<label for="born">생년월일</label>
+					<span id="bMes" class="message"></span>
+					<input type="text" id="born" class="line" required size="8" placeholder="생년월일">
+				</div>
+			</div>
+			<div class="jright">
+				<div class="inputArea id-section">
+					<label for="idArea">아이디</label>
+					<span id="idMes" class="message"></span>
+					<input type="text" id="idArea" class="line" required size="30" placeholder="아이디" value="">
+					<button>중복확인</button>
+				</div>
+				<div>
+					<label for="pwArea2">비밀번호확인</label>
+					<span id="pwMes2" class="message"></span>
+					<input type="password" id="pwArea2" class="line" required size="30" placeholder="비밀번호확인">
+				</div>
+				<div>
+					<label for="email">이메일</label>
+					<span id="eMes" class="message"></span>
+					<input type="text" id="email" class="line" required size="30" placeholder="이메일">
+				</div>
+			</div>
+			<div class="jbottome">
+				<div>
+					<span class="gnederArea">성별</span>
+					<input type="radio" name="gender" id="female">
+					<label for="female" class="gender female">여성</label>
+					<input type="radio" name="gender" id="male">
+					<label for="male" class="gender male">남성</label>
+					<span id="gMes" class="gendermessage"></span>
+				</div>
+				<div>
+					<input type="button" value="회원가입" class="btn" id="submit">
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="wrap">
 		<div id="header">
 			<div class="inner">
@@ -83,33 +153,10 @@
 						<div class="sign">
 							<ul class="flex-between">
 								<li><a href="#">Login</a></li>
-								<li><a href="#">Join</a></li>
+								<li><a href="#" class="jbutton">Join</a></li>
 							</ul>
 						</div>
-						<div class="join">
-							<div class="jimg">
 
-							</div>
-							<div class="jreg">
-								<h2>회원가입</h2>
-								<div class="jleft">
-									<div class="inputArea">
-										<label for="name">이름</label>
-										<span id="nameMes" class="message"></span>
-										<input type="text" id="name" class="line" required size="30" placeholder="이름">
-									</div>
-								</div>
-								<div class="jright">
-									<div class="inputArea id-section">
-										<label for="idArea">아이디</label>
-										<span id="idMes" class="message"></span>
-										<input type="text" id="idArea" class="line" required size="30" placeholder="아이디" value="">
-										<button>중복확인</button>
-									</div>
-								</div>
-								<div class="jbottome"></div>
-							</div>
-						</div>
 						<a href="#" class="more-btn-wrap db">
 							<span class="bar bar1"></span>
 							<span class="bar bar2"></span>

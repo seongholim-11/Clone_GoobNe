@@ -21,7 +21,12 @@ h1.logo a img{width: 16rem;}
 .sign ul li{margin: 5px;}
 .sign ul li a{display: block; font-size: 2rem; font-family: 'Rubik'; cursor: pointer;}
 
-.join{display: none;}
+.jbg{display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0, 0, 0, 0.4);}
+.join{display: none; width: 90rem; height: 75rem; border-radius: 20px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99999; background: #ddd;}
+.jimg{flex-basis: 40%;}
+.jimg-slide{width: 100%;}
+.jimg-slide img{width: 100%;}
+.jreg{flex-basis: 60%;}
 
 .order{position: relative;}
 .order-ob-wrap{padding-top: 5rem; box-sizing: border-box; position: absolute; top: 0; left: -120%; display: none;}

@@ -47,6 +47,28 @@ aside_ul_a.on({click: function () {
     }
 })
 
+const jButton = document.querySelector('.jbutton');
+const join = document.querySelector('.join');
+const jbg = document.querySelector('.jbg');
+
+
+function modal() {
+    jbg.style.display = 'block'
+    join.style.display = 'flex'
+    join.style.position = 'fixed'
+}
+
+jButton.addEventListener('click', function() {
+    // 모달창 띄우기
+    modal();
+});
+
+
+
+
+
+
+
 // banner
 $('.main-vi-wrap').slick({
     dots: true,
