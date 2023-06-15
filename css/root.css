@@ -10,7 +10,7 @@ input, button{border: none; outline: none;}
 :root{
     --base-white: #F1F6F9;
     --base-black: #333333; 
-    --base-red: #D4000B; 
+    --base-red: rgb(212, 0, 11); 
     --base-beige: #FBF5F0; 
     --base-beige-13: rgba(227, 130, 17, 0.13); 
     --text-white: #ffffff; 
