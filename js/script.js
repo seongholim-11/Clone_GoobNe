@@ -56,6 +56,16 @@ function modal() {
     jbg.style.display = 'block'
     join.style.display = 'flex'
     join.style.position = 'fixed'
+
+    // banner
+$('.jimg').slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+});
 }
 
 jButton.addEventListener('click', function() {
