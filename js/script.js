@@ -553,7 +553,7 @@ let observer_goobtube_img = new IntersectionObserver((item) => {
             img.target.style.transform = 'translateY(-50%)';
             img.target.style.opacity = '1';;
         } else {
-            img.target.style.right = '100%';
+            img.target.style.right = '50%';
             img.target.style.transform = 'translateY(-50%)';
             img.target.style.opacity = '0';
         }
@@ -577,7 +577,7 @@ let observer_goobtube_text = new IntersectionObserver((item) => {
             text.target.style.transform = 'translateY(-50%)';
             text.target.style.opacity = '1';;
         } else {
-            text.target.style.left = '100%';
+            text.target.style.left = '50%';
             text.target.style.transform = 'translateY(-50%)';
             text.target.style.opacity = '0';
         }
