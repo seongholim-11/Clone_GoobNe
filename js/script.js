@@ -54,14 +54,16 @@ aside_ul_a.on({
 
 // join
 const jButton = $('.jbutton');
-const join = document.querySelector('.join');
+const join = document.querySelector('#join');
+const _join = document.querySelector('.join');
 const jbg = document.querySelector('.jbg');
 const jclose = document.querySelector('.jclose');
 
 
 function modal() {
+    join.style.display = 'block'
     jbg.style.display = 'block'
-    join.style.display = 'flex'
+    _join.style.display = 'flex'
     signUp()
     _signUp()
 }
@@ -206,8 +208,7 @@ function signUp() {
         }
     })
 
-    const submit = document.querySelector('#submit');
-    submit.addEventListener.click(function () {
+    document.getElementById('_submit').onclick = function () {
         if ($name.value == "") {
             alert("이름을 입력해주세요")
             return false
@@ -256,7 +257,7 @@ function signUp() {
                 }
             }
         }
-    });
+    };
 };
 function _signUp() {
     let _idArea = document.querySelector('#_idArea')
@@ -383,8 +384,7 @@ function _signUp() {
         }
     })
 
-    const _submit = document.querySelector('#_submit');
-    _submit.addEventListener.click(function () {
+    document.getElementById('_submit').onclick = function () {
         if (_$name.value == "") {
             alert("이름을 입력해주세요")
             return false
@@ -433,7 +433,7 @@ function _signUp() {
                 }
             }
         }
-    });
+    };
 };
 
 
