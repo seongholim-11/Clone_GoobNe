@@ -64,8 +64,6 @@ function modal() {
     join.style.display = 'block'
     jbg.style.display = 'block'
     _join.style.display = 'flex'
-    signUp()
-    _signUp()
 }
 
 jButton.each(function () {
@@ -83,6 +81,9 @@ jclose.addEventListener('click', function () {
     join.style.display = 'none'
 });
 
+
+signUp()
+_signUp()
 function signUp() {
     let idArea = document.querySelector('#idArea')
     let idMes = document.querySelector('#idMes')
@@ -208,7 +209,8 @@ function signUp() {
         }
     })
 
-    document.getElementById('_submit').onclick = function () {
+    const submit = document.querySelector('#submit')
+    submit.addEventListener('click',function () {
         if ($name.value == "") {
             alert("이름을 입력해주세요")
             return false
@@ -257,7 +259,7 @@ function signUp() {
                 }
             }
         }
-    };
+    });
 };
 function _signUp() {
     let _idArea = document.querySelector('#_idArea')
@@ -383,8 +385,11 @@ function _signUp() {
             }
         }
     })
-
-    document.getElementById('_submit').onclick = function () {
+    const _submit = document.querySelector('#_submit');
+    console.log("🚀 ~ file: script.js:388 ~ _signUp ~ _submit:", _submit)
+    console.log("🚀 ~ file: script.js:390 ~ _$name:", _$name.value)
+    
+    _submit.addEventListener('click',function () {
         if (_$name.value == "") {
             alert("이름을 입력해주세요")
             return false
@@ -421,7 +426,7 @@ function _signUp() {
                                         if (document.querySelector('[name=_gender]:checked') == null) {
                                             _gMes.style.color = 'red'
                                             _gMes.innerHTML = '성별을 체크해주세요'
-                                            document.querySelector('#female').focus();
+                                            document.querySelector('#_female').focus();
                                         } else {
                                             location.href = 'index.html'
                                         }
@@ -433,7 +438,7 @@ function _signUp() {
                 }
             }
         }
-    };
+    });
 };
 
 
@@ -544,11 +549,11 @@ $(slideBanner).on('mouseout leave', function () {
 let observer_goobtube_img = new IntersectionObserver((item) => {
     item.forEach((img) => {
         if (img.isIntersecting) {
-            img.target.style.left = '10%';
+            img.target.style.right = '10%';
             img.target.style.transform = 'translateY(-50%)';
             img.target.style.opacity = '1';;
         } else {
-            img.target.style.left = '-20%';
+            img.target.style.right = '100%';
             img.target.style.transform = 'translateY(-50%)';
             img.target.style.opacity = '0';
         }
@@ -568,11 +573,11 @@ observer_goobtube_img.observe(youtube[3]);
 let observer_goobtube_text = new IntersectionObserver((item) => {
     item.forEach((text) => {
         if (text.isIntersecting) {
-            text.target.style.right = '10%';
+            text.target.style.left = '10%';
             text.target.style.transform = 'translateY(-50%)';
             text.target.style.opacity = '1';;
         } else {
-            text.target.style.right = '-20%';
+            text.target.style.left = '100%';
             text.target.style.transform = 'translateY(-50%)';
             text.target.style.opacity = '0';
         }

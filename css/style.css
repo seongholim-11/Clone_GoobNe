@@ -33,6 +33,7 @@ h1.logo a img{width: 16rem;}
 .jtop h2{font-size: 3.5rem;}
 .jtop button{background: transparent; cursor: pointer;}
 .jmiddle-m{display: none;}
+.jbottom-m{display: none;}
 .jleft{width: 100%; margin-right: 2rem; position: relative;}
 .jright{width: 100%; margin-right: 2rem; position: relative;}
 .inputArea{width: 100%; margin-bottom: 0.8rem;}
@@ -44,6 +45,7 @@ h1.logo a img{width: 16rem;}
 .id-section button{padding: 6px; border-radius: 10px; margin-left: 1px; height: 30px; cursor: pointer;}
 .jbottom{font-size: 1.8rem; font-weight: bold;}
 .jbottom div:first-child{margin-top: 0.5rem;}
+.jbottom span{font-size: 1.3rem;}
 .signupbtn{margin-top: 3rem; text-align: center;}
 .signupbtn input{width: 100%; border-radius: 10px; padding: 10px 5px 13px; background: rgba(211, 0, 11); color: #fff; cursor: pointer; font-size:2rem;}
 
@@ -249,20 +251,21 @@ h1.logo a img{width: 16rem;}
   100%{transform: translateX(-500%);}
 }
 
-.out-in-img.inner{position: relative; background: none; width: 175rem; overflow: hidden;}
-.oii{display: none; position: relative; width: 100%; height: 50rem;}
+.out-in-img.inner{position: relative; background: none; width: 160rem;}
+.oii{display: none; width: 100%; height: 50rem; overflow: hidden;}
 .oii.active{display: block;}
+.oii-img-wrap, .oii-text-wrap{width: 50%; height: 100%; float: left; position: relative;}
 .oii-img, .oii-text{position: absolute; top: 50%; transform: translateY(-50%); transition: all 1.5s;}
-.oii-img{left: 5%; opacity: 1;}
-.oii-img img{width: 53rem; height: 35rem;}
-.oii-text{right: 5%; opacity: 1;}
-.oii-text h3{font-size: 4rem;}
+.oii-img{right: 5%; opacity: 1;}
+.oii-img img{width: 50rem; height: 32rem;}
+.oii-text{left: 5%; opacity: 1;}
+.oii-text h3{font-size: 4rem; width: 600px;}
 .oii-text p{font-size: 2.5rem; margin-top: 2rem;}
 .oii-text a{display: block; padding: 1rem 2rem 1.3rem; font-size: 2rem; border: 1px solid #050000; width: 12rem; border-radius: 10px; background: #fff; font-weight: 500; margin-top: 2rem; text-align: center;}
 
 .prev_arrow, .next_arrow{position: absolute; width: 40px; height: 65px; top: 50%; transform: translateY(-50%); cursor: pointer;}
-.prev_arrow{left: 0; background: url(../img/goobtube/Vector\ 2.png) no-repeat;}
-.next_arrow{right: 0; background: url(../img/goobtube/Vector.png) no-repeat;}
+.prev_arrow{left: -60px; background: url(../img/goobtube/Vector\ 2.png) no-repeat;}
+.next_arrow{right: -60px;; background: url(../img/goobtube/Vector.png) no-repeat;}
 
 
 /* footer */
@@ -323,7 +326,7 @@ h1.logo a img{width: 16rem;}
 
   .goobtube h2{font-size: 6rem;}
 
-  .out-in-img.inner{width: 155rem;}
+  .out-in-img.inner{width: 140rem;}
 
   /* footer */
   .footer-down>p{float: none; margin-top: 1.5rem;}
@@ -359,9 +362,9 @@ h1.logo a img{width: 16rem;}
   .nfmc{ margin: 4rem 0; height: 8rem;}
   .nfmc ul li{font-size: 3rem; width: 40rem;}
 
-  .out-in-img.inner{width: 130rem;}
+  .out-in-img.inner{width: 110rem;}
   .oii{height: 40rem;}
-  .oii-img img{width: 48rem; height: 30rem;}
+  .oii-img img{width: 45rem; height: 27rem;}
   .oii-text h3{font-size: 2.8rem;}
   .oii-text p{font-size: 2.3rem; margin-top: 1.8rem;}
   .oii-text a{padding: 0.7rem 1.5rem 1rem; font-size: 1.8rem; width: 11rem; margin-top: 1.8rem;}
@@ -416,9 +419,9 @@ h1.logo a img{width: 16rem;}
   .nfmc{ margin: 4rem 0; height: 7rem;}
   .nfmc ul li{font-size: 2.5rem; width: 35rem;}
 
-  .out-in-img.inner{width: 95rem;}
+  .out-in-img.inner{width: 90rem;}
   .oii{height: 35rem;}
-  .oii-img img{width: 43rem; height: 25rem;}
+  .oii-img img{width: 40rem; height: 22rem;}
   .oii-text h3{font-size: 2.3rem;}
   .oii-text p{font-size: 1.8rem; margin-top: 1.5rem;}
   .oii-text a{padding: 0.7rem 1.5rem 1rem; font-size: 1.5rem; width: 10rem; margin-top: 1.5rem;}
@@ -506,9 +509,9 @@ h1.logo a img{width: 16rem;}
   .nfmc{margin: 3rem 0; height: 5rem;}
   .nfmc ul li{font-size: 2rem; width: 28rem;}
 
-  .out-in-img.inner{width: 70rem;}
+  .out-in-img.inner{width: 60rem;}
   .oii{height: 30rem;}
-  .oii-img img{width: 28rem; height: 18rem;}
+  .oii-img img{width: 25rem; height: 18rem;}
   .oii-text h3{font-size: 2rem;}
   .oii-text p{font-size: 1.5rem; margin-top: 1rem;}
   .oii-text a{padding: 0.4rem 1.3rem 0.7rem; font-size: 1.3rem; width: 8rem; margin-top: 1rem;}
@@ -526,7 +529,9 @@ h1.logo a img{width: 16rem;}
 
   /* join */
   .jmiddle-pc{display: none;}
+  .jbottom-pc{display: none;}
   .jmiddle-m{display: block;}
+  .jbottom-m{display: block;}
   .join{width: 40rem; height: 80rem; left: 50%;}
   .inputArea input{width: 300px; height: 3rem;}
   .id-section input{width: 235px;}
@@ -567,7 +572,7 @@ h1.logo a img{width: 16rem;}
   .nfmc{margin: 3rem 0; height: 5rem;}
   .nfmc ul li{font-size: 2rem; width: 28rem;}
 
-  .out-in-img.inner{width: 690px;}
+  .out-in-img.inner{width: 60rem;}
   .oii{height: 25rem;}
   .oii-img img{width: 23rem; height: 15rem;}
   .oii-text h3{font-size: 1.8rem;}
