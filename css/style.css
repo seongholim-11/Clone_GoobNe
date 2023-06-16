@@ -82,7 +82,7 @@ h1.logo a img{width: 16rem;}
 .lesserafim_banner{display: block; width: 100%; margin-left: -7rem; margin-bottom: 7rem;}
 .aside_scroll>ul{margin-bottom: 7.2rem;}
 .aside_scroll>ul>li{margin-bottom: 3rem;}
-.aside_scroll>ul>li>a{display: inline-block; font-size: 2.7rem; font-weight: 800; color: var(--base-white);}
+.aside_scroll>ul>li>a{display: inline-block; font-size: 2.7rem; font-weight: 800; color: var(--base-white); width: 130px;}
 
 .depth>a{background: url(../img/more_menu/a-lnb-arrow.svg) no-repeat center right; background-size: 2.2rem; padding-right: 4rem;}
 .depth>a.active{background: url(../img/more_menu/a-lnb-arrow-on.svg) no-repeat center right; background-size: 2.2rem;}
@@ -451,7 +451,7 @@ h1.logo a img{width: 16rem;}
   .lesserafim_banner{display: block; margin-left: -4rem; margin-bottom: 7rem;}
   .lesserafim_banner img{width: 126%;}
   .aside-inner .aside-login a{font-size: 1.5rem;}
-  .aside_scroll>ul>li>a{font-size: 2rem;}
+  .aside_scroll>ul>li>a{font-size: 2rem;  width: 100px;}
   .depth>ul>li>a{font-size: 1.3rem;}
 
   /* join */
@@ -554,12 +554,12 @@ h1.logo a img{width: 16rem;}
   .aside-lnb{max-width: 25rem;}
   .aside-inner{padding: 2rem;}
   .aside-inner .aside-login{margin-bottom: 5rem;}
-  .aside-inner .aside-login a{font-size: 1.2rem;}
+  .aside-inner .aside-login a{font-size: 1.5rem;}
   .lesserafim_banner{margin-left: -2rem; margin-bottom: 5rem;}
   .lesserafim_banner img{width: 120%;}
-  .aside_scroll>ul>li>a{font-size: 1.5rem;}
+  .aside_scroll>ul>li>a{font-size: 1.8rem; width: 70px;}
   .depth>ul{margin-top: 1.8rem;}
-  .depth>ul>li>a{font-size: 1rem;}
+  .depth>ul>li>a{font-size: 1.3rem;}
   .aside_scroll .aside-num dt{font-size: 1.5rem;}
   .aside_scroll .aside-num dd{font-size: 1.5rem;}
 
