@@ -571,9 +571,8 @@ h1.logo a img{width: 16rem;}
   .banner-img{max-width: 500px;}
   .banner-bg2 .banner-text p{font-size: 4rem;}
   .banner-bg2 .banner-img2 .goobne-btn span{font-size: 0.3rem; margin-bottom: 1.5rem;}
-  .banner-bg2 .banner-img2 .goobne-btn span em{display: none;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn1{font-size: 1.2rem;}
-  .banner-bg2 .banner-img2 .goobne-menu-btn.btn2{font-size: 1.2rem;}
+  .banner-bg2 .banner-img2 .goobne-btn.btn1{display: none;}
+  .banner-bg2 .banner-img2 button{display: none;}
   .slick-dots{bottom: 5rem;}
 
   /* goobnews */
