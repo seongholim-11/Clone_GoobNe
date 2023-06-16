@@ -544,10 +544,10 @@ h1.logo a img{width: 16rem;}
   .jbottom-pc{display: none;}
   .jmiddle-m{display: block;}
   .jbottom-m{display: block;}
-  .join{width: 43rem; height: 40rem; left: 50%; overflow-y: scroll;}
+  .join{width: 35rem; height: 40rem; left: 50%; overflow-y: scroll;}
   .jreg{height: 75rem;}
-  .inputArea input{width: 340px; height: 3rem;}
-  .id-section input{width: 275px;}
+  .inputArea input{width: 280px; height: 3rem;}
+  .id-section input{width: 215px;}
   .id-section button{height: 30px;}
   .gnederArea{margin-left: 0rem; margin-top: 1rem;}
   .signupbtn{margin-top: 3.5rem;}
