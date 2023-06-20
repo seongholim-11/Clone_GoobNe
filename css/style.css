@@ -50,7 +50,7 @@ h1.logo a img{width: 16rem;}
 .signupbtn input{width: 100%; border-radius: 10px; padding: 10px 5px 13px; background: rgba(211, 0, 11); color: #fff; cursor: pointer; font-size:2rem;}
 
 .order{position: relative;}
-.order-ob-wrap{padding-top: 5rem; box-sizing: border-box; position: absolute; top: 0; left: -120%; display: none;}
+.order-ob-wrap{padding-top: 5rem; box-sizing: border-box; position: absolute; top: 0; left: -110%; display: none;}
 .order-ob{width: 30rem; height: 6.5rem; background: #fff; border-radius: 6px; border: 1px solid #000; display: flex; align-items:center; justify-content: center; box-sizing: border-box;}
 .order:hover>.order-ob-wrap{display: block;}
 .order-ob>button{height: 3rem; font-weight: 800; padding: 1rem 0; box-sizing: content-box; background: #fff; font-size: 1.6rem; cursor: pointer; display: block; display: flex; align-items: center;}
