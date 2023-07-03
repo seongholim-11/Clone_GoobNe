@@ -550,13 +550,13 @@ h1.logo a img{width: 16rem;}
   .sign{display: none;}
   .more-btn{width: 30px; height: 18px;}
 
-  .aside-lnb{max-width: 25rem;}
+  .aside-lnb{max-width: 30rem;}
   .aside-inner{padding: 2rem;}
   .aside-inner .aside-login{margin-bottom: 5rem;}
   .aside-inner .aside-login a{font-size: 1.5rem;}
   .lesserafim_banner{margin-left: -2rem; margin-bottom: 5rem;}
   .lesserafim_banner img{width: 120%;}
-  .aside_scroll>ul>li>a{font-size: 1.8rem; width: 70px;}
+  .aside_scroll>ul>li>a{font-size: 1.8rem; width: 85px;}
   .depth>ul{margin-top: 1.8rem;}
   .depth>ul>li>a{font-size: 1.3rem;}
   .aside_scroll .aside-num dt{font-size: 1.5rem;}
